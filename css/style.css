@@ -1,0 +1,16 @@
+.btn-purple {
+    background: #926FB1;
+    color: white;
+}
+
+#main-nav,
+#about,
+footer {
+    background: #333645;
+    color: white;
+} 
+
+#main-nav a {
+    color: white;
+}
+
