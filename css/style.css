@@ -10,6 +10,14 @@ footer {
     color: white;
 } 
 
+#hero {
+    background: #e4b786;
+}
+
+#newsletter {
+    background: #DDD;
+}
+
 #main-nav a {
     color: white;
 }
