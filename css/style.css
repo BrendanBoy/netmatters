@@ -23,7 +23,8 @@ footer {
 } 
 
 #hero {
-    background: #e4b786;
+    background-image: url('../img/carousel/web-design.jpeg');
+    color: white;
 }
 
 #newsletter {
@@ -34,3 +35,6 @@ footer {
     color: white;
 }
 
+#about {
+    background-image: url('../img/net-back.png');
+}
