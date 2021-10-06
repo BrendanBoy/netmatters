@@ -15,6 +15,14 @@ h4,
     color: white;
 }
 
+.hero {
+  background-image: url('../img/carousel/web-design.jpeg');
+  height: calc(100vh - 181px); /* This works fine for large and upwards but needs a different solution to cover small and medium */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #main-nav,
 #about,
 footer {
@@ -22,10 +30,10 @@ footer {
     color: white;
 } 
 
-#hero {
+/* #hero {
     background-image: url('../img/carousel/web-design.jpeg');
     color: white;
-}
+} */
 
 #newsletter {
     background: #DDD;
