@@ -22,6 +22,11 @@ h4,
   background-size: cover;
 }
 
+.avatar {
+    border-radius: 50%;
+}
+
+
 #main-nav,
 #about,
 footer {
