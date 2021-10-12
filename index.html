@@ -273,7 +273,7 @@
                 </div>
             </div>
         </section>
-        <section id="news-cards" class="p-5 border-top"> <!-- The xl break point for this section should 1260 rather than 1200 -->
+        <section id="news-cards" class="p-5" style="box-shadow: inset 0 5px 35px rgba(0,0,0,0.1);"> <!-- The xl break point for this section should 1260 rather than 1200 -->
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-xl-4">
@@ -341,8 +341,8 @@
                 </div>
             </div>
         </section>
-        <section id="clients">
-            <div class="container d-none d-md-block border-top">
+        <section id="clients" style="box-shadow: inset 0 5px 35px rgba(0,0,0,0.1);">
+            <div class="container d-none d-md-block">
                 <ul class="navbar nav p-4">
                     <li class="nav-item">
                         <img src="img/clients/busseys_greyscale.jpeg" alt="">
@@ -388,63 +388,63 @@
     </main>
     <footer>
         <div class="container">
-            <div class="about-nav">
-                <h4>About Netmatters</h4>
-                <ul>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Our Careers</a></li>
-                    <li><a href="#">Our Team</a></li>
-                    <li><a href="#">Our Office Tour</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Environmental Policy</a></li>
-                </ul>
-            </div>
-            <div class="services-nav">
-                <h4>Our Services</h4>
-                <ul>
-                    <li><a href="#">Bespoke Software</a></li>
-                    <li><a href="#">IT Support</a></li>
-                    <li><a href="#">Digital Marketing</a></li>
-                    <li><a href="#">Telecoms Services</a></li>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Cyber Security</a></li>
-                    <li><a href="#">Developer Training</a></li>
-                </ul>
-            </div>
-            <div class="office">
-                <h4>Cambridge Office</h4>
-                <ul>
-                    <li>Unit 1.28,</li>
-                    <li>St John's Innovation Centre,</li>
-                    <li>Cowley Road,</li>
-                    <li>Cambridge,</li>
-                    <li>CB4 0WS</li>
-                    <li>Tel: <a href="#">01223 37 57 72</a></li>
-                </ul>
-            </div>
-            <div class="office">
-                <h4>Wymondham Office</h4>
-                <ul>
-                    <li>Unit 15,</li>
-                    <li>Penfold Drive,</li>
-                    <li>Gateway 11 Business Park,</li>
-                    <li>Wymondham, Norfolk,</li>
-                    <li>NR18 0WZ</li>
-                    <li>Tel: <a href="#">01603 70 40 20</a></li>
-                </ul>
-            </div>
-            <div class="office">
-                <h4>Great Yarmouth Office</h4>
-                <ul>
-                    <li>Suite F23,</li>
-                    <li>Beacon Innovation Centre,</li>
-                    <li>Beacon Park, Gorleston,</li>
-                    <li>Great Yarmouth, Norfolk,</li>
-                    <li>NR31 7RA</li>
-                    <li>Tel: <a href="#">01493 60 32 04</a></li>
-                </ul>
+            <div class="d-flex">
+                <div>
+                    <h4>About Netmatters</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Our Careers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Our Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Our Office Tour</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Privacy Policy</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Cookie Policy</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Terms & Conditions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Environmental Policy</a></li>
+                    </ul>
+                </div>
+                <nav class="flex-column">
+                    <h4>Our Services</h4>
+                    <a class="nav-link" href="#">Bespoke Software</a>
+                    <a class="nav-link" href="#">IT Support</a>
+                    <a class="nav-link" href="#">Digital Marketing</a>
+                    <a class="nav-link" href="#">Telecoms Services</a>
+                    <a class="nav-link" href="#">Web Design</a>
+                    <a class="nav-link" href="#">Cyber Security</a>
+                    <a class="nav-link" href="#">Developer Training</a>
+                </nav>
+                <div class="office">
+                    <h4>Cambridge Office</h4>
+                    <ul>
+                        <li>Unit 1.28,</li>
+                        <li>St John's Innovation Centre,</li>
+                        <li>Cowley Road,</li>
+                        <li>Cambridge,</li>
+                        <li>CB4 0WS</li>
+                        <li>Tel: <a href="#">01223 37 57 72</a></li>
+                    </ul>
+                </div>
+                <div class="office">
+                    <h4>Wymondham Office</h4>
+                    <ul>
+                        <li>Unit 15,</li>
+                        <li>Penfold Drive,</li>
+                        <li>Gateway 11 Business Park,</li>
+                        <li>Wymondham, Norfolk,</li>
+                        <li>NR18 0WZ</li>
+                        <li>Tel: <a href="#">01603 70 40 20</a></li>
+                    </ul>
+                </div>
+                <div class="office">
+                    <h4>Great Yarmouth Office</h4>
+                    <ul>
+                        <li>Suite F23,</li>
+                        <li>Beacon Innovation Centre,</li>
+                        <li>Beacon Park, Gorleston,</li>
+                        <li>Great Yarmouth, Norfolk,</li>
+                        <li>NR31 7RA</li>
+                        <li>Tel: <a href="#">01493 60 32 04</a></li>
+                    </ul>
+                </div>
             </div>
             <hr>
             <span>&copy Copyright Netmatters Ltd. 2021. All rights reserved. - <a href="#">Sitemap`</a></span>
@@ -453,8 +453,8 @@
     <section>
         <div class="container d-none d-md-block p-5">
             <div class="row mb-5">
-                <div class="col"></div>
-                <div class="col"><img src="img/awards/silver-microsoft-partner.jpg" alt=""></div>
+                <div class="col"><img src="img/awards/google-partner.svg" alt=""></div>
+                    <div class="col"><img src="img/awards/silver-microsoft-partner.jpg" alt=""></div>
                 <div class="col"><img src="img/awards/future-50_greyscale.jpeg" alt=""></div>
                 <div class="col"><img src="img/awards/qms_greyscale.jpeg" alt=""></div>
                 <div class="col"><img src="img/awards/norfolk-carbon-charter_greyscale.jpeg" alt=""></div>
