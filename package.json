@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/BrendanBoy/netmatters/issues"
   },
-  "homepage": "https://github.com/BrendanBoy/netmatters#readme"
+  "homepage": "https://github.com/BrendanBoy/netmatters#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
 }
