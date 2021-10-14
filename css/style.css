@@ -9,11 +9,6 @@ h4,
     text-transform: uppercase;
 }
 
-.btn-purple {
-    background: #926FB1;
-    color: white;
-}
-
 .hero {
   background-image: url('../img/carousel/web-design.jpeg');
   height: calc(100vh - 181px); /* This works fine for large and upwards but needs a different solution to cover small and medium */
