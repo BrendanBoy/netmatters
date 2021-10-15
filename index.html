@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +9,73 @@
     <title>Netmatters | Full Service Digital Agency | Norwich, Norfolk | Netmatters</title>
     <link rel="stylesheet" href="/css/main.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"> 
-    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <!-- navbar -->
+        <nav class="navbar navbar-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="#" class="navbar-brand">
+                            <img src="/img/f-logo.png" alt="Netmatters logo">
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- navbar links -->
+                        <div class="justify-content-end">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"></a><!-- phone icon -->
+                                </li>
+                                <li class="nav-item d-none d-lg-block">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-support">
+                                            <i class="bi bi-mouse2-fill"></i>
+                                            Support
+                                        </button>
+                                    </a>
+                                </li>
+                                <li class="nav-item d-none d-lg-block">
+                                    <a class="nav-link" href="#">
+                                        <button type="button" class="btn btn-menu-light">
+                                            <i class="bi bi-telegram"></i>
+                                            Contact
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="d-none d-lg-block d-xl-none">
+                                        <button type="button" class="btn btn-menu-light">
+                                            <i class="bi bi-search"></i>
+                                        </button>
+                                    </span>
+                                </li>
+                                <li>
+                                    <form class="d-none d-md-block d-lg-none d-xl-block">
+                                        <div class="input-group">
+                                            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                                            <button type="button" class="btn btn-menu-light"><i class="bi bi-search"></i></button>
+                                        </div>
+                                    </form>
+                                </li>
+                                
+                                <!-- toggle button for sidebar menu -->
+                                <li>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse">
+                                        <span class="navbar-toggler-icon"></span><br>
+                                        <small>Menu</small>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="img/f-logo.png" alt="Netmatters Logo">
@@ -39,7 +99,7 @@
                             </a>
                         </li>
                     </ul>
-                    <form class="d-flex">
+                    <form class="d-none d-md-block d-lg-none d-xl-block">
                         <div class="input-group">
                             <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
                             <button type="button" class="btn btn-secondary"><i class="bi bi-search"></i></button>
@@ -47,7 +107,7 @@
                     </form>
                 </div>
             </div>
-        </nav>
+        </nav> -->
         <nav id="main-nav">
             <ul class="nav nav-justified container d-none d-lg-flex">
                 <li class="nav-item">
@@ -145,13 +205,14 @@
         </nav>
     </header>
     <main>
-        <section class="hero text-white d-flex align-items-center"> <!-- I should probably add a background colour to this -->
+        <section class="hero text-white d-flex align-items-center">
+            <!-- I should probably add a background colour to this -->
             <div class="container">
                 <div class="d-flex flex-column align-items-center align-items-lg-start">
                     <h1>Web Design</h1>
                     <p>For businesses looking to make a strong<br>
-                    and effective first impression.</p>
-                    <a class="text-white btn btn-lg btn-design" href="#">
+                        and effective first impression.</p>
+                    <a class="btn btn-lg btn-design" href="#">
                         Find Out More
                         <i class="bi bi-arrow-right"></i>
                     </a>
@@ -162,15 +223,17 @@
         <!-- Remember you need to change xl from 1200 to 1260 for this to react at the correct point. -->
         <div id="service-cards">
             <section class="container">
-                <div class="row mt-4 mb-5"> <!-- Don't forget about this margin, there's got to be a neater way of achieving this. -->
+                <div class="row mt-4 mb-5">
+                    <!-- Don't forget about this margin, there's got to be a neater way of achieving this. -->
                     <div class="col-lg-4 pt-4">
                         <div class="card h-100 text-center shadow-sm">
                             <div class="card-body d-flex flex-column">
                                 <i class="bi bi-grid-3x3-gap-fill text-white bg-software"></i>
                                 <h2 class="card-title">Bespoke Software</h2>
-                                <p class="card-text">Tailored software solutions to improve business productivity and online profits. Our expert team will ensure a software solution.</p>
+                                <p class="card-text">Tailored software solutions to improve business productivity and
+                                    online profits. Our expert team will ensure a software solution.</p>
                                 <span class="mt-auto">
-                                    <a class="card-link text-white btn btn-software" href="#">Read More</a>
+                                    <a class="card-link btn btn-software" href="#">Read More</a>
                                 </span>
                             </div>
                         </div>
@@ -180,9 +243,10 @@
                             <div class="card-body d-flex flex-column">
                                 <i class="bi bi-display text-white bg-support"></i>
                                 <h2 class="card-title">IT Support</h2>
-                                <p class="card-text">Remotely managed IT services that is catered to your businesses needs, adds value and reduces costs.</p>
+                                <p class="card-text">Remotely managed IT services that is catered to your businesses
+                                    needs, adds value and reduces costs.</p>
                                 <span class="mt-auto">
-                                    <a class="card-link text-white btn btn-support" href="#">Read More</a>
+                                    <a class="card-link btn btn-support" href="#">Read More</a>
                                 </span>
                             </div>
                         </div>
@@ -191,10 +255,11 @@
                         <div class="card h-100 text-center shadow-sm">
                             <div class="card-body d-flex flex-column">
                                 <i class="bi bi-bar-chart-fill text-white bg-marketing"></i>
-                                <h2 class="card-title">Digital Marketing    </h2>
-                                <p class="card-text">Driving brand awareness and ROI through creative digital marketing campaigns. We revieew and monitor online performances.</p>
+                                <h2 class="card-title">Digital Marketing </h2>
+                                <p class="card-text">Driving brand awareness and ROI through creative digital marketing
+                                    campaigns. We revieew and monitor online performances.</p>
                                 <span class="mt-auto">
-                                    <a class="card-link text-white btn btn-marketing" href="#">Read More</a>
+                                    <a class="card-link btn btn-marketing" href="#">Read More</a>
                                 </span>
                             </div>
                         </div>
@@ -204,9 +269,10 @@
                             <div class="card-body d-flex flex-column">
                                 <i class="bi bi-telephone-fill text-white bg-telecoms"></i>
                                 <h2 class="card-title">Telecoms Services</h2>
-                                <p class="card-text">Stay connected with bespoke telecoms solutions when you need it most.</p>
+                                <p class="card-text">Stay connected with bespoke telecoms solutions when you need it
+                                    most.</p>
                                 <span class="mt-auto">
-                                    <a class="card-link text-white btn btn-telecoms" href="#">Read More</a>
+                                    <a class="card-link btn btn-telecoms" href="#">Read More</a>
                                 </span>
                             </div>
                         </div>
@@ -216,9 +282,10 @@
                             <div class="card-body d-flex flex-column">
                                 <i class="bi bi-code-slash text-white bg-design"></i>
                                 <h2 class="card-title">Web Design</h2>
-                                <p class="card-text">User-centric design for businesses looking to make a lasting impression.</p>
+                                <p class="card-text">User-centric design for businesses looking to make a lasting
+                                    impression.</p>
                                 <span class="mt-auto">
-                                    <a class="card-link text-white btn btn-design" href="#">Read More</a>
+                                    <a class="card-link btn btn-design" href="#">Read More</a>
                                 </span>
                             </div>
                         </div>
@@ -228,9 +295,10 @@
                             <div class="card-body d-flex flex-column">
                                 <i class="bi bi-shield-shaded text-white bg-security"></i>
                                 <h2 class="card-title">Cyber Security</h2>
-                                <p class="card-text">Ensuring your online business stays secure 24/7, 365 days of the year.</p>
+                                <p class="card-text">Ensuring your online business stays secure 24/7, 365 days of the
+                                    year.</p>
                                 <span class="mt-auto">
-                                    <a class="card-link text-white btn btn-security" href="#">Read More</a>
+                                    <a class="card-link btn btn-security" href="#">Read More</a>
                                 </span>
                             </div>
                         </div>
@@ -240,9 +308,10 @@
                             <div class="card-body d-flex flex-column">
                                 <i class="bi bi-book text-white bg-design"></i>
                                 <h2 class="card-title">Developer Training</h2>
-                                <p class="card-text">Have you considered a career in web development but you aren't sure where to start?</p>
+                                <p class="card-text">Have you considered a career in web development but you aren't sure
+                                    where to start?</p>
                                 <span class="mt-auto">
-                                    <a class="card-link text-white btn btn-design" href="#">Read More</a>
+                                    <a class="card-link btn btn-design" href="#">Read More</a>
                                 </span>
                             </div>
                         </div>
@@ -253,11 +322,17 @@
         <section id="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6 py-5"> <!-- lg break point -->
+                    <div class="col-xl-6 py-5">
+                        <!-- lg break point -->
                         <h1>Netmatters</h1>
-                        <p><strong>Netmatters Ltd is a leading web design, IT support and digital marketing agency based in the East of England with offices in Cambridge, Wymondham and Great Yarmouth.</strong></p>
-                        <p>Founded in 2008, we work with businesses from a variety of industries to gain new prospects, nurture existing leads and further grow their sales.</p>
-                        <p>We provide cost effective, reliable solutions to a range of services; fromm bespoke cloud-based management systems, workflow and IT solutions through to creative website development and integrated digital campaiging.</p>
+                        <p><strong>Netmatters Ltd is a leading web design, IT support and digital marketing agency based
+                                in the East of England with offices in Cambridge, Wymondham and Great Yarmouth.</strong>
+                        </p>
+                        <p>Founded in 2008, we work with businesses from a variety of industries to gain new prospects,
+                            nurture existing leads and further grow their sales.</p>
+                        <p>We provide cost effective, reliable solutions to a range of services; fromm bespoke
+                            cloud-based management systems, workflow and IT solutions through to creative website
+                            development and integrated digital campaiging.</p>
                         <a class="btn btn-light" href="#">
                             Our Culture
                             <i class="bi bi-arrow-right"></i>
@@ -273,7 +348,8 @@
                 </div>
             </div>
         </section>
-        <section id="news-cards" class="p-5" style="box-shadow: inset 0 5px 35px rgba(0,0,0,0.1);"> <!-- The xl break point for this section should 1260 rather than 1200 -->
+        <section id="news-cards" class="p-5" style="box-shadow: inset 0 5px 35px rgba(0,0,0,0.1);">
+            <!-- The xl break point for this section should 1260 rather than 1200 -->
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-xl-4">
@@ -281,9 +357,10 @@
                             <img src="img/news/10-ways-to-22ch.jpg" class="card-img-top" alt="">
                             <div class="card-body d-flex flex-column">
                                 <h3 class="card-title">
-                                    <a href="#">10 ways to help make your business more robus...</a> 
+                                    <a href="#">10 ways to help make your business more robus...</a>
                                 </h3>
-                                <p class="card-text">A robust business is one defined as being able to continue to be successful irrespective of the mark...</p>
+                                <p class="card-text">A robust business is one defined as being able to continue to be
+                                    successful irrespective of the mark...</p>
                                 <span class="mt-auto">
                                     <a class="card-link btn btn-primary" href="#">Read More</a>
                                 </span>
@@ -292,7 +369,7 @@
                                 <img class="float-start rounded-circle" src="img/news/james-gulliver-rgmz.jpg" alt="">
                                 <div>
                                     <p>Posted by James Gulliver<br>
-                                    <span class="text-muted">5th October 2021</span>
+                                        <span class="text-muted">5th October 2021</span>
                                     </p>
                                 </div>
                             </div>
@@ -303,9 +380,10 @@
                             <img src="img/news/september-2021-notables-qhiw.jpg" class="card-img-top" alt="">
                             <div class="card-body d-flex flex-column">
                                 <h3 class="card-title">
-                                    <a href="#">September 2021 Notables</a> 
+                                    <a href="#">September 2021 Notables</a>
                                 </h3>
-                                <p class="card-text">Every month we celebrate the most notable of employees here at Netmatters. Each department head is a...</p>
+                                <p class="card-text">Every month we celebrate the most notable of employees here at
+                                    Netmatters. Each department head is a...</p>
                                 <span class="mt-auto">
                                     <a class="card-link btn btn-purple" href="#">Read More</a>
                                 </span>
@@ -313,19 +391,21 @@
                             <div class="card-footer">
                                 <img class="float-start rounded-circle" src="img/news/netmatters-ltd-VXAv.png" alt="">
                                 <p>Posted by Netmatters Ltd<br>
-                                <span class="text-muted">5th October 2021</span>
+                                    <span class="text-muted">5th October 2021</span>
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="d-md-none d-xl-block col-xl-4"> <!-- This seems a little bit clunky but it works -->
+                    <div class="d-md-none d-xl-block col-xl-4">
+                        <!-- This seems a little bit clunky but it works -->
                         <div class="card h-100 shadow-sm">
                             <img src="img/news/telemarketing-sales-executive-HapA.jpg" class="card-img-top" alt="">
                             <div class="card-body d-flex flex-column">
                                 <h3 class="card-title">
-                                    <a href="#">Telemarketing Sales Executive</a> 
+                                    <a href="#">Telemarketing Sales Executive</a>
                                 </h3>
-                                <p class="card-text">Salary Range £22,000 (basic) (£30,000 OTE) + Benefits Hours 40 hours per week, Monday - Friday Locat...</p>
+                                <p class="card-text">Salary Range £22,000 (basic) (£30,000 OTE) + Benefits Hours 40
+                                    hours per week, Monday - Friday Locat...</p>
                                 <span class="mt-auto">
                                     <a class="card-link btn btn-purple" href="#">Read More</a>
                                 </span>
@@ -333,7 +413,7 @@
                             <div class="card-footer">
                                 <img class="float-start rounded-circle" src="img/news/mark-reilly-Q6d8.jpg" alt="">
                                 <p>Posted by Mark Riley<br>
-                                <span class="text-muted">28th September 2021</span>
+                                    <span class="text-muted">28th September 2021</span>
                                 </p>
                             </div>
                         </div>
@@ -343,24 +423,24 @@
         </section>
         <section id="clients" style="box-shadow: inset 0 5px 35px rgba(0,0,0,0.1);">
             <div class="container d-none d-md-block">
-                <ul class="navbar nav p-4">
-                    <li class="nav-item">
+                <div class="row py-4">
+                    <div class="col px-1">
                         <img src="img/clients/busseys_greyscale.jpeg" alt="">
-                    </li>
-                    <li class="nav-item">
+                    </div>
+                    <div class="col px-1">
                         <a class="nav-link" href="#">
                             <img src="img/clients/crane_greyscale.jpeg" alt="">
                         </a>
-                    </li>
-                    <li class="nav-item">
+                    </div>
+                    <div class="col px-1">
                         <img src="img/clients/beat_greyscale.jpeg" alt="">
-                    </li>
-                    <li class="nav-item">
+                    </div>
+                    <div class="col px-1">
                         <a href="#">
                             <img src="img/clients/northern-diver_greyscale.jpeg" alt="">
                         </a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="newsletter">
@@ -379,7 +459,9 @@
                     </div>
                     <div class="form-check mb-3">
                         <input type="checkbox" class="form-check-input" value="" id="marketing">
-                        <label for="marketing" class="form-check-label">Please tick this box if you want to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we use your data.</label>
+                        <label for="marketing" class="form-check-label">Please tick this box if you want to receive
+                            marketing information from us. Please see our <a href="#">Privacy Policy</a> for more
+                            information on how we use your data.</label>
                     </div>
                     <button type="submit" class="btn btn-dark">Subscribe</button>
                 </form>
@@ -448,7 +530,7 @@
         <div class="container d-none d-md-block p-5">
             <div class="row mb-5">
                 <div class="col"><img src="img/awards/google-partner.svg" alt=""></div>
-                    <div class="col"><img src="img/awards/silver-microsoft-partner.jpg" alt=""></div>
+                <div class="col"><img src="img/awards/silver-microsoft-partner.jpg" alt=""></div>
                 <div class="col"><img src="img/awards/future-50_greyscale.jpeg" alt=""></div>
                 <div class="col"><img src="img/awards/qms_greyscale.jpeg" alt=""></div>
                 <div class="col"><img src="img/awards/norfolk-carbon-charter_greyscale.jpeg" alt=""></div>
@@ -461,6 +543,9 @@
             </div>
         </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

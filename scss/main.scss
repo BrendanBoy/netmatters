@@ -64,3 +64,57 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
 // import bootstrap whole sass lib
 @import '../node_modules/bootstrap/scss/bootstrap';
+
+body {
+  color: #333645;
+}
+
+small {
+  font-size: 10px;
+}
+
+.btn {
+  color: white;
+}
+
+.btn-light {
+  color: #333645;
+}
+
+h1,
+h4,
+#main-nav,
+.btn {
+    text-transform: uppercase;
+}
+
+.hero {
+  background-image: url('../img/carousel/web-design.jpeg');
+  height: calc(100vh - 181px); /* This works fine for large and upwards but needs a different solution to cover small and medium */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+#main-nav,
+#about,
+footer {
+    background: #333645;
+    color: white;
+} 
+
+#newsletter {
+    background: #DDD;
+}
+
+#main-nav a {
+    color: white;
+}
+
+#about {
+    background-image: url('../img/net-back.png');
+}

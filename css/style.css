@@ -1,7 +1,3 @@
-body {
-    font-family: Poppins, sans-serif;
-}
-
 h1,
 h4,
 #main-nav,
@@ -28,11 +24,6 @@ footer {
     background: #333645;
     color: white;
 } 
-
-/* #hero {
-    background-image: url('../img/carousel/web-design.jpeg');
-    color: white;
-} */
 
 #newsletter {
     background: #DDD;
