@@ -121,20 +121,6 @@ h4,
     border-radius: 50%;
 }
 
-.colour-change {
-  position: relative;
-}
-
-.greyscale {
-  position: absolute;
-  right: 0;
-  opacity: 1;
-}
-
-.greyscale:hover {
-  opacity: 0;
-}
-
 #main-nav,
 #about,
 footer {
@@ -154,6 +140,33 @@ footer {
     background-image: url('../img/net-back.png');
 }
 
+
+
 .frame-up {
   border: solid 1px red;
+}
+
+// Transitions & transforms
+.colour-change {
+  position: relative;
+}
+
+.greyscale {
+  position: absolute;
+  right: 0;
+  opacity: 1;
+}
+
+.greyscale:hover {
+  opacity: 0;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.card-img-top:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+  transition: all 0.1s;
 }
