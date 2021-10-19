@@ -37,9 +37,9 @@ $custom-theme-colors: (
     "software": #67809f,
     "marketing": #2ecc71,
     "security": #f62459,
-    "menu-dark": #333645,
+    "altDark": #333645,
     "newsletter": #ddd,
-    "menu-light": #999aa2,
+    "altLight": #999aa2,
     "facebook": #3b5998,
     "twitter": #00aced,
     "instagram": #d93175,
@@ -121,6 +121,20 @@ h4,
     border-radius: 50%;
 }
 
+.colour-change {
+  position: relative;
+}
+
+.greyscale {
+  position: absolute;
+  right: 0;
+  opacity: 1;
+}
+
+.greyscale:hover {
+  opacity: 0;
+}
+
 #main-nav,
 #about,
 footer {
@@ -129,7 +143,7 @@ footer {
 } 
 
 #newsletter {
-    background: #DDD;
+    background: #ddd;
 }
 
 #main-nav a {
@@ -138,4 +152,8 @@ footer {
 
 #about {
     background-image: url('../img/net-back.png');
+}
+
+.frame-up {
+  border: solid 1px red;
 }
