@@ -1,0 +1,40 @@
+// Section Colours
+$design: #926fb1;
+$support: #4183d7;
+$telecoms: #d64541;
+$software: #67809f;
+$marketing: #2ecc71;
+$security: #f62459;
+$newsletter: #ddd;
+$altLight: #999aa2;
+$altDark: #333645;
+
+// Socials Colours
+$facebook: #3b5998;
+$twitter: #00aced;
+$instagram: #d93175;
+$linkedin: #0077b5;
+
+$hamburger-layer-color: white;
+
+// font family
+$font-family-base: "Poppins";
+
+// modify the xl breakpoint
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1260px,
+  xxl: 1400px
+);
+
+// modify the container max widths
+$container-max-widths: (
+  sm: 576px,
+  md: 750px,
+  lg: 970px,
+  xl: 1200px,
+  xxl: 1200px
+);

@@ -1,49 +1,30 @@
+// importing My Variables
+@import 'partials/my-variables';
+
 // importing the font (I'll need to trim this down at some point)
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-// import the functions
+// import the bootstrap functions
 @import "../node_modules/bootstrap/scss/_functions";
 
-// font family
-$font-family-base: "Poppins";
-
-// modify the xl breakpoint
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1260px,
-  xxl: 1400px
-);
-
-// modify the container max widths
-$container-max-widths: (
-  sm: 100%,
-  md: 750px,
-  lg: 970px,
-  xl: 1200px,
-  xxl: 1200px
-);
-
-// import variables
+// import the bootstrap variables
 @import "../node_modules/bootstrap/scss/_variables";
 
-// add some custom colours
+// add a custom colours map
 $custom-theme-colors: (
-    "design": #926fb1,
-    "support": #4183d7,
-    "telecoms": #d64541,
-    "software": #67809f,
-    "marketing": #2ecc71,
-    "security": #f62459,
-    "altDark": #333645,
-    "newsletter": #ddd,
-    "altLight": #999aa2,
-    "facebook": #3b5998,
-    "twitter": #00aced,
-    "instagram": #d93175,
-    "linkedin": #0077b5,
+    "design": $design,
+    "support": $support,
+    "telecoms": $telecoms,
+    "software": $software,
+    "marketing": $marketing,
+    "security": $security,
+    "altDark": $altDark,
+    "newsletter": $newsletter,
+    "altLight": $altLight,
+    "facebook": $facebook,
+    "twitter": $twitter,
+    "instagram": $instagram,
+    "linkedin": $linkedin,
 );
 
 // merge the custom colours to the theme colours map
@@ -63,26 +44,46 @@ $utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text"
 $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
 // import hamburgers
-$hamburger-layer-color: white;
-@import '../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
+@import '../hamburgers/hamburgers';
 
-// import bootstrap whole sass lib
+// import  the rest of the bootstrap sass lib
 @import '../node_modules/bootstrap/scss/bootstrap';
 
+// import my transitions & transforms
+@import 'partials/my-tnt';
+
+
+/* this lot need sorting */
 body {
-  color: #333645;
+  color: $altDark;
+}
+
+h1,
+h4,
+#main-nav,
+.btn {
+    text-transform: uppercase;
+}
+
+#main-nav,
+#main-nav a,
+#about,
+footer {
+    background: $altDark;
+    color: white;
+} 
+
+#newsletter {
+    background: $newsletter;
 }
 
 small {
   font-size: 10px;
 }
 
-.btn {
-  color: white;
-}
-
-.btn-light {
-  color: #333645;
+.hamburger {
+  font-size: 12px;
+  line-height: 12px;
 }
 
 .circle-icon {
@@ -97,78 +98,32 @@ small {
   align-self: center;
 }
 
-.hamburger {
-  font-size: 12px;
-  line-height: 12px;
+#about {
+  background-image: url('../img/net-back.png');
 }
 
-h1,
-h4,
-#main-nav,
-.btn {
-    text-transform: uppercase;
+.avatar {
+  border-radius: 50%;
 }
 
 .hero {
   background-image: url('../img/carousel/web-design.jpeg');
-  height: calc(100vh - 181px); /* This works fine for large and upwards but needs a different solution to cover small and medium */
+  height: calc(100vh - 181px); // This works fine for large and upwards but needs a different solution to cover small and medium
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.avatar {
-    border-radius: 50%;
+// these should probably be dealt with in the btn rules
+.btn {
+  color: white;
 }
 
-#main-nav,
-#about,
-footer {
-    background: #333645;
-    color: white;
-} 
-
-#newsletter {
-    background: #ddd;
+.btn-light {
+  color: $altDark;
 }
 
-#main-nav a {
-    color: white;
-}
-
-#about {
-    background-image: url('../img/net-back.png');
-}
-
-
-
+// This is just here to help me out :-/
 .frame-up {
   border: solid 1px red;
-}
-
-// Transitions & transforms
-.colour-change {
-  position: relative;
-}
-
-.greyscale {
-  position: absolute;
-  right: 0;
-  opacity: 1;
-}
-
-.greyscale:hover {
-  opacity: 0;
-}
-
-.image-container {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-
-.card-img-top:hover {
-  opacity: 0.7;
-  transform: scale(1.1);
-  transition: all 0.25s;
 }
