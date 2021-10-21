@@ -1,0 +1,16 @@
+@each $name, $colour in ($service-colours) {
+    .#{$name} {
+      i {
+        @include circle-icon;
+        background-color: $colour;
+      }
+      &:hover {
+        color: white;
+        background-color: $colour;
+        i, .btn {
+          color: $colour;
+          background-color: white;
+        }
+      }
+    }
+  }

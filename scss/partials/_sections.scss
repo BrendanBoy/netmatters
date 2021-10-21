@@ -1,0 +1,27 @@
+#main-nav {
+  text-transform: uppercase;
+}
+
+#main-nav,
+#main-nav a {
+  background: $altDark;
+  color: white;
+} 
+
+#hero {
+  background-image: url('../img/carousel/web-design.jpeg');
+  height: calc(100vh - 181px); // This works fine for large and upwards but needs a different solution to cover small and medium
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#about {
+  background-image: url('../img/net-back.png');
+  background: $altDark;
+  color: white;
+} 
+
+#newsletter {
+  background: $newsletter;
+}

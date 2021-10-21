@@ -1,0 +1,25 @@
+.btn {
+  text-transform: uppercase;
+  color: white;
+  &-light {
+    color: $altDark;
+  }
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-text {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+}
+
+  .hamburger {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+  }
