@@ -17,6 +17,33 @@ $linkedin: #0077b5;
 
 $hamburger-layer-color: white;
 
+// add a custom colours map
+$custom-theme-colors: (
+    "design": $design,
+    "support": $support,
+    "telecoms": $telecoms,
+    "software": $software,
+    "marketing": $marketing,
+    "security": $security,
+    "altDark": $altDark,
+    "newsletter": $newsletter,
+    "altLight": $altLight,
+    "facebook": $facebook,
+    "twitter": $twitter,
+    "instagram": $instagram,
+    "linkedin": $linkedin,
+);
+
+// create a subset
+$service-colours: (
+  "design": $design,
+  "support": $support,
+  "telecoms": $telecoms,
+  "software": $software,
+  "marketing": $marketing,
+  "security": $security,
+);
+
 // font family
 $font-family-base: "Poppins";
 
