@@ -1,15 +1,22 @@
 
-@mixin circle-icon {
-    margin-bottom: 17px;
+@mixin circle-icon($dim) {
     color: white;
-    font-size: 23px;
-    width: 60px;
-    height: 60px;
     border-radius: 50%;
     text-align: center;
-    line-height: 60px;
     align-self: center;
+    width: $dim;
+    height: $dim;
+
 }  
+
+@mixin picfix($yourl) {
+    background: {
+        image: url($yourl);
+        position: center;
+        repeat: no-repeat;
+          size: cover;
+    }
+}
 
 @mixin colouriser($map) {
     @each $section, $colour in $map {

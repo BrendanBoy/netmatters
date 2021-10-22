@@ -1,16 +1,37 @@
 @each $name, $colour in ($service-colours) {
-    .#{$name} {
-      i {
-        @include circle-icon;
-        background-color: $colour;
+  .#{$name} {
+    i {
+      @include circle-icon(60px);
+      background-color: $colour;
+      margin-bottom: 17px;
+      font-size: 23px;
+      line-height: 60px;
+    }
+    &:hover {
+      color: white;
+      background-color: $colour;
+      i, .btn {
+        color: $colour;
+        background-color: white;
       }
+    }
+  }
+}
+
+  @each $name, $colour in ($service-colours) {
+    .news-#{$name} h3 a {
+      color: $colour;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+  }
+
+  @each $name, $colour in ($socials-colours) {
+    .bi-#{$name} {
       &:hover {
-        color: white;
-        background-color: $colour;
-        i, .btn {
-          color: $colour;
-          background-color: white;
-        }
+        color: $colour;
       }
     }
   }

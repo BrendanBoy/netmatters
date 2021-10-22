@@ -28,10 +28,6 @@ $custom-theme-colors: (
     "altDark": $altDark,
     "newsletter": $newsletter,
     "altLight": $altLight,
-    "facebook": $facebook,
-    "twitter": $twitter,
-    "instagram": $instagram,
-    "linkedin": $linkedin,
 );
 
 // create a subset
@@ -42,6 +38,13 @@ $service-colours: (
   "software": $software,
   "marketing": $marketing,
   "security": $security,
+);
+// add a colours map for the social media links
+$socials-colours: (
+"facebook": $facebook,
+"twitter": $twitter,
+"instagram": $instagram,
+"linkedin": $linkedin,
 );
 
 // font family

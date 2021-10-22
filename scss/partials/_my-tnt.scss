@@ -1,4 +1,6 @@
 // Transitions & transforms
+
+// client & award/accreditation sections
 .colour-change {
   position: relative;
 }
@@ -13,6 +15,7 @@
   opacity: 0;
 }
 
+// news card images
 .image-container {
   width: 100%;
   height: auto;
@@ -23,4 +26,15 @@
   opacity: 0.7;
   transform: scale(1.1);
   transition: all 0.25s;
+}
+
+// a rough attempt to mimic the checkbox from the example site
+input[type=checkbox] {
+  border-color: $altDark;
+  transform: scale(2);
+}
+
+.form-check-input:checked {
+  background-color: $altDark;
+  border-color: $altDark;
 }

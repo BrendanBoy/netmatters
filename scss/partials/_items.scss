@@ -15,11 +15,28 @@
   line-height: 1.375rem;
 }
 
-  .hamburger {
-    font-size: 12px;
-    line-height: 12px;
-  }
-  
-  .avatar {
-    border-radius: 50%;
-  }
+.hamburger {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+legend {
+  font-size: 32px;
+}
+
+label {
+  font-weight: 600;
+}
+
+.form-check-label {
+  line-height: 32px;
+  margin-left: 18px;
+}
+
+.asterisk {
+  color: #d24d57;
+}

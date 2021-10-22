@@ -9,19 +9,78 @@
 } 
 
 #hero {
-  background-image: url('../img/carousel/web-design.jpeg');
   height: calc(100vh - 181px); // This works fine for large and upwards but needs a different solution to cover small and medium
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include picfix('../img/carousel/web-design.jpeg');
 }
 
 #about {
-  background-image: url('../img/net-back.png');
-  background: $altDark;
   color: white;
-} 
+  background: $altDark;
+  @include picfix('../img/net-back.png');
+}
+
+#headline {
+  display: block;
+  padding: 40px 0;
+  span {
+    border-bottom: $altDark solid 5px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 24px;
+    padding-bottom: 37px;
+    text-transform: uppercase;
+  }
+}
 
 #newsletter {
   background: $newsletter;
+  a {
+    text-decoration: underline;
+    &:hover {
+      color: #121419;
+    }
+  }
+}
+
+footer {
+  background: $altDark;
+  color: white;
+  font-size: 13px;
+  line-height: 22px;
+  padding: 47px 0 43px;
+  a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+} 
+
+.feet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.foot-navs,
+.offices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.foot-nav, 
+.office {
+  width: 225px;
+}
+
+.outro {
+  display: flex;
+}
+
+.socials {
+  margin-left: auto;
+  font-size: 0.9rem;
+  a {
+    padding: 7px 10px 10px;
+  }
 }
