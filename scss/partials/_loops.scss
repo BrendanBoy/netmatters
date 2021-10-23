@@ -1,3 +1,4 @@
+// setting up the service cards
 @each $name, $colour in ($service-colours) {
   .#{$name} {
     i {
@@ -18,20 +19,29 @@
   }
 }
 
-  @each $name, $colour in ($service-colours) {
-    .news-#{$name} h3 a {
-      color: $colour;
-      font-size: 1rem;
-      line-height: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 15px;
-    }
-  }
 
-  @each $name, $colour in ($socials-colours) {
-    .bi-#{$name} {
-      &:hover {
-        color: $colour;
-      }
+// setting up the news cards, 
+// I wanted to set up their buttons too but I couldn't figure it out
+// they seem to be too deeply enmeshed in bootstrap
+
+@each $name, $colour in ($service-colours) {
+  .news-#{$name} h3 a {
+    color: $colour;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+}
+
+
+// setting up the colours for the social media icons
+// I might look for some icons that more closly match the ones on the orinal site
+// then I can reuse the circle-icon mixin
+@each $name, $colour in ($socials-colours) {
+  .bi-#{$name} {
+    &:hover {
+      color: $colour;
     }
   }
+}

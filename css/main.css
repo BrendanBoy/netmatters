@@ -11046,6 +11046,20 @@ textarea.form-control-lg {
   border-radius: 3px;
 }
 
+.btn-top {
+  line-height: 46px;
+  padding: 5px 15px;
+  font-size: 1.125rem;
+  border-radius: 3px;
+}
+
+.btn-hero {
+  line-height: 50px;
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  border-radius: 3px;
+}
+
 .colour-change {
   position: relative;
 }
@@ -11169,6 +11183,16 @@ label {
 
 .asterisk {
   color: #d24d57;
+}
+
+.top {
+  display: flex;
+}
+
+.top-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 #main-nav {

@@ -1,0 +1,14 @@
+.btn {
+    line-height: 35px;
+    @include button-size(5px, 15px, 1.063rem, 3px) 
+}
+
+.btn-top {
+    line-height: 46px;
+    @include button-size(5px, 15px, 1.125rem, 3px)
+}
+
+.btn-hero {
+    line-height: 50px;
+    @include button-size(5px, 20px, 1.25rem, 3px)
+}

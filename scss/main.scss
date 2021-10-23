@@ -20,8 +20,8 @@ url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100,0,200,0,30
 // import  the rest of the bootstrap sass lib
 '../node_modules/bootstrap/scss/bootstrap',
 
-// import my bootstrap overrides
-'partials/bootstrap-override',
+// import my button modifications
+'partials/button-mods',
 
 // import my transitions & transforms
 'partials/my-tnt',
