@@ -4,8 +4,13 @@
 }
 
 .btn-top {
+    min-width:62px;
     line-height: 46px;
-    @include button-size(5px, 15px, 1.125rem, 3px)
+    margin-left: 20px;
+    @include button-size(5px, 15px, 1.125rem, 3px);
+    &:hover {
+        color: white;
+    }
 }
 
 .btn-hero {

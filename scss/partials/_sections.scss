@@ -3,10 +3,13 @@
   display: flex;
 }
 
+.net-logo {
+  margin-right: auto;
+}
+
 .top-buttons {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
 }
 
 #main-nav {
@@ -68,20 +71,22 @@ footer {
 .feet {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .foot-navs,
 .offices {
   display: flex;
-  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-wrap:wrap;
   justify-content: space-evenly;
-  margin-bottom: 30px;
+  
 }
 
 .foot-nav, 
 .office {
   width: 225px;
+  margin-bottom: 30px;
 }
 
 .outro {
@@ -89,9 +94,10 @@ footer {
 }
 
 .socials {
+  display: flex;
   margin-left: auto;
   font-size: 0.9rem;
   a {
-    padding: 7px 10px 10px;
+    padding: 0 10px;
   }
 }
