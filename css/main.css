@@ -975,7 +975,7 @@ progress {
 
 @media (min-width: 576px) {
   .container-sm, .container {
-    max-width: 576px;
+    max-width: 100%;
   }
 }
 @media (min-width: 768px) {
@@ -11041,12 +11041,14 @@ textarea.form-control-lg {
 }
 .btn {
   line-height: 35px;
+  transition-duration: 0s;
   padding: 5px 15px;
   font-size: 1.063rem;
   border-radius: 3px;
 }
 
 .btn-top {
+  height: 56px;
   min-width: 62px;
   line-height: 46px;
   margin-left: 20px;
@@ -11063,6 +11065,10 @@ textarea.form-control-lg {
   padding: 5px 20px;
   font-size: 1.25rem;
   border-radius: 3px;
+}
+
+button .title {
+  margin-top: 5px;
 }
 
 .colour-change {
@@ -11145,6 +11151,8 @@ a {
 
 small, .small {
   font-size: 10px;
+  padding-bottom: 1px;
+  line-height: 1;
 }
 
 .btn {
@@ -11153,6 +11161,20 @@ small, .small {
 }
 .btn-light {
   color: #333645;
+}
+
+.telephone {
+  font-size: 32px;
+  margin-left: 20px;
+  align-self: center;
+}
+.telephone a:hover {
+  color: inherit;
+  border-bottom: solid 3px #333645;
+}
+
+#search-box {
+  margin-left: 20px;
 }
 
 .hamburger {
@@ -11232,16 +11254,6 @@ label {
 .top-buttons {
   display: flex;
   align-items: center;
-}
-
-#main-nav {
-  text-transform: uppercase;
-}
-
-#main-nav,
-#main-nav a {
-  background: #333645;
-  color: white;
 }
 
 #hero {
@@ -11331,4 +11343,177 @@ footer a:hover {
 
 .frame-up {
   border: solid 1px red;
+}
+
+#main-nav {
+  background: #333645;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Adding the outside border */
+.drop {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* The container for positioning the dropdown */
+.drop-box {
+  position: relative;
+  padding: 19px 0 18px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+/* Styling the dropdown button & the icon inside */
+.drop-btn {
+  font-size: 18px;
+  line-height: 18px;
+}
+.drop-btn .icon {
+  font-size: 1.438rem;
+  line-height: 1;
+  padding-bottom: 10px;
+}
+
+/* The dropdown content */
+.drop-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  bottom: -45px;
+  padding-left: 0;
+  height: 45px;
+  width: 970px;
+  font-size: 13px;
+  list-style-type: "-    ";
+}
+.drop-menu :first-child {
+  list-style-type: none;
+}
+
+/* Show the dropdown menu on hover */
+.drop-box:hover .drop-menu {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.support-menu {
+  left: -162px;
+}
+
+.telecoms-menu {
+  left: -323px;
+}
+
+.software-menu {
+  left: -485px;
+}
+
+.marketing-menu {
+  left: -647px;
+}
+
+.security-menu {
+  left: -808px;
+}
+
+.drop-menu li {
+  padding-right: 40px;
+}
+
+.design-box:hover {
+  background-color: #926fb1;
+}
+.design-box:hover a,
+.design-box:hover a i {
+  color: white;
+}
+
+.design-btn .icon {
+  color: #926fb1;
+}
+
+.design-menu {
+  background: #79539a;
+}
+
+.support-box:hover {
+  background-color: #4183d7;
+}
+.support-box:hover a,
+.support-box:hover a i {
+  color: white;
+}
+
+.support-btn .icon {
+  color: #4183d7;
+}
+
+.support-menu {
+  background: #286abd;
+}
+
+.telecoms-box:hover {
+  background-color: #d64541;
+}
+.telecoms-box:hover a,
+.telecoms-box:hover a i {
+  color: white;
+}
+
+.telecoms-btn .icon {
+  color: #d64541;
+}
+
+.telecoms-menu {
+  background: #bc2c28;
+}
+
+.software-box:hover {
+  background-color: #67809f;
+}
+.software-box:hover a,
+.software-box:hover a i {
+  color: white;
+}
+
+.software-btn .icon {
+  color: #67809f;
+}
+
+.software-menu {
+  background: #526781;
+}
+
+.marketing-box:hover {
+  background-color: #2ecc71;
+}
+.marketing-box:hover a,
+.marketing-box:hover a i {
+  color: white;
+}
+
+.marketing-btn .icon {
+  color: #2ecc71;
+}
+
+.marketing-menu {
+  background: #25a25a;
+}
+
+.security-box:hover {
+  background-color: #f62459;
+}
+.security-box:hover a,
+.security-box:hover a i {
+  color: white;
+}
+
+.security-btn .icon {
+  color: #f62459;
+}
+
+.security-menu {
+  background: #de093f;
 }/*# sourceMappingURL=main.css.map */

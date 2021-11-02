@@ -17,8 +17,11 @@
             <div class="top">
                 <div class="net-logo">
                     <a href="#">
-                        <img src="img/f-logo.png" alt="Netmatters logo">
+                        <img class="img-fluid" src="img/f-logo.png" alt="Netmatters logo">
                     </a>
+                </div>
+                <div class="telephone d-md-none">
+                    <a href="#"><i class="bi bi-telephone-fill"></i></a>
                 </div>
                 <div class="top-buttons">
                     <a href="#" class="btn btn-top btn-support d-none d-lg-block">
@@ -32,7 +35,7 @@
                     <a href="#" class="btn btn-top btn-altLight top-search d-none d-lg-block d-xl-none">
                         <i class="bi bi-search"></i>
                     </a>
-                    <form class="d-none d-md-block d-lg-none d-xl-block">
+                    <form id="search-box" class="d-none d-md-block d-lg-none d-xl-block">
                         <div class="input-group">
                             <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
                             <button type="button" class="btn btn-top btn-altLight"><i class="bi bi-search"></i></button>
@@ -42,7 +45,7 @@
                         <span class="hamburger-box">
                             <span class="hamburger-inner"></span>
                         </span><br>
-                        <div class="pt-2">Menu</div>
+                        <div class="title">Menu</div>
                     </button>
                 </div>
             </div>
@@ -55,98 +58,105 @@
 
     <!-- main site navigation -->
     <nav id="main-nav">
-        <ul class="nav nav-justified container d-none d-lg-flex">
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="bi bi-code-slash text-design"></i>
+        <ul class="drop nav nav-justified container d-none d-lg-flex">
+            
+            <li class="design-box drop-box nav-item">
+                <a class="design-btn drop-btn" href="#">
+                    <div class="icon"><i class="bi bi-code-slash"></i></div>
                     <div class="small">Web</div>
-                    Design
+                    <div>Design</div>
                 </a>
+                <ul class="design-menu drop-menu">
+                    <li><a href="#">Stylish Websites</a></li>
+                    <li><a href="#">Ecommerce Stores</a></li>
+                    <li><a href="#">Branding</a></li>
+                    <li><a href="#">Apps</a></li>
+                    <li><a href="#">Web Hosting</a></li>
+                    <li><a href="#">Pay Monthly Websites</a></li>
+                </ul>
             </li>
-            <!-- <ul>
-                <li><a href="#">Stylish Websites</a></li>
-                <li><a href="#">Stores</a></li>
-                <li><a href="#">Branding</a></li>
-                <li><a href="#">Apps</a></li>
-                <li><a href="#">Web Hosting</a></li>
-                <li><a href="#">Pay Monthly Websites</a></li>
-            </ul> -->
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="bi bi-display text-support"></i>
+            
+            <li class="support-box drop-box nav-item">
+                <a class="support-btn drop-btn" href="#">
+                    <div class="icon"><i class="bi bi-display"></i></div>
                     <div class="small">It</div>
                     Support
                 </a>
+                <ul class="support-menu drop-menu">
+                    <li><a href="#">Managed It</a></li>
+                    <li><a href="#">Business It</a></li>
+                    <li><a href="#">Office 365</a></li>
+                    <li><a href="#">Consultancy</a></li>
+                    <li><a href="#">Cloud Provider</a></li>
+                    <li><a href="#">Cyber Security</a></li>
+                </ul>
             </li>
-            <!-- <ul>
-                <li><a href="#">Managed It</a></li>
-                <li><a href="#">Business It</a></li>
-                <li><a href="#">Office 365</a></li>
-                <li><a href="#">Consultancy</a></li>
-                <li><a href="#">Cloud Provider</a></li>
-                <li><a href="#">Cyber Security</a></li>
-            </ul> -->
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="bi bi-telephone-fill text-telecoms"></i>
+            
+            <li class="telecoms-box drop-box nav-item">
+                <a class="telecoms-btn drop-btn" href="#">
+                    <div class="icon"><i class="bi bi-telephone-fill"></i></div>
                     <div class="small">Telecoms</div>
                     Services
                 </a>
+                <ul class="telecoms-menu drop-menu">
+                    <li><a href="#">Gigabit Voucher</a></li>
+                    <li><a href="#">Hosted Voip</a></li>
+                    <li><a href="#">Business Voip</a></li>
+                    <li><a href="#">Business Broadband</a></li>
+                    <li><a href="#">Leased Line</a></li>
+                    <li><a href="#">3CX Systems</a></li>
+                </ul>
             </li>
-            <!-- <ul>
-                <li><a href="#">Gigabit Voucher</a></li>
-                <li><a href="#">Hosted Voip</a></li>
-                <li><a href="#">Business Voip</a></li>
-                <li><a href="#">Business Broadband</a></li>
-                <li><a href="#">Leased Line</a></li>
-                <li><a href="#">3CX Systems</a></li>
-            </ul> -->
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="bi bi-grid-3x3-gap-fill text-software"></i>
+            
+            <li class="software-box drop-box nav-item">
+                <a class="software-btn drop-btn" href="#">
+                    <div class="icon"><i class="bi bi-grid-3x3-gap-fill"></i></div>
                     <div class="small">Bespoke</div>
                     Software
                 </a>
+                <ul class="software-menu drop-menu">
+                    <li><a href="#">Workflow</a></li>
+                    <li><a href="#">Automation</a></li>
+                    <li><a href="#">Integration</a></li>
+                    <li><a href="#">Database</a></li>
+                    <li><a href="#">Sharepoint</a></li>
+                    <li><a href="#">Management</a></li>
+                    <li><a href="#">Navision</a></li>
+                </ul>
             </li>
-            <!-- <ul>
-                <li><a href="#">Workflow</a></li>
-                <li><a href="#">Automation</a></li>
-                <li><a href="#">Integration</a></li>
-                <li><a href="#">Database</a></li>
-                <li><a href="#">Sharepoint</a></li>
-                <li><a href="#">Management</a></li>
-                <li><a href="#">Navision</a></li>
-            </ul> -->
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="bi bi-bar-chart-fill text-marketing"></i>
+            
+            <li class="marketing-box drop-box nav-item">
+                <a class="marketing-btn drop-btn" href="#">
+                    <div class="icon"><i class="bi bi-bar-chart-fill"></i></div>
                     <div class="small">Digital</div>
                     Marketing
                 </a>
+                <ul class="marketing-menu drop-menu">
+                    <li><a href="#">Search (SEO)</a></li>
+                    <li><a href="#">Paid (PPC)</a></li>
+                    <li><a href="#">Conversion (CRO)</a></li>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Social Media</a></li>
+                    <li><a href="#">Content</a></li>
+                </ul>
             </li>
-            <!-- <ul>
-                <li><a href="#">Search (SEO)</a></li>
-                <li><a href="#">Paid (PPC)</a></li>
-                <li><a href="#">Conversion (CRO)</a></li>
-                <li><a href="#">Email</a></li>
-                <li><a href="#">Social Media</a></li>
-                <li><a href="#">Content</a></li>
-            </ul> -->
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="bi bi-shield-shaded text-security"></i>
+            
+            <li class="security-box drop-box nav-item">
+                <a class="security-btn drop-btn" href="#">
+                    <div class="icon"><i class="bi bi-shield-shaded"></i></div>
                     <div class="small">Cyber</div>
                     Security
                 </a>
+                <ul class="security-menu drop-menu">
+                    <li><a href="#">Assessment</a></li>
+                    <li><a href="#">Management</a></li>
+                    <li><a href="#">Penetration Testing</a></li>
+                    <li><a href="#">Cyber Essentials</a></li>
+                    <li><a href="#">PCI/DSS</a></li>
+                    <li><a href="#">Hacker Prevention</a></li>
+                </ul>
             </li>
-            <!-- <ul>
-                <li><a href="#">Assessment</a></li>
-                <li><a href="#">Management</a></li>
-                <li><a href="#">Penetration Testing</a></li>
-                <li><a href="#">Cyber Essentials</a></li>
-                <li><a href="#">PCI/DSS</a></li>
-                <li><a href="#">Hacker Prevention</a></li>
-            </ul> -->
+            
         </ul>
     </nav>
 
@@ -289,7 +299,7 @@
         </section>
         <section id="headline">
             <div class="container">
-                <div class="">
+                <div>
                     <span>Latest</span>
                 </div>
             </div>
@@ -297,7 +307,7 @@
         <section id="news-cards" class="p-5" style="box-shadow: inset 0 5px 35px rgba(0,0,0,0.1);">
             <!-- The xl break point for this section should 1260 rather than 1200 -->
             <div class="container">
-                <div class="row">
+                <div class="row mb-4">
                     <div class="col-md-6 col-xl-4">
                         <div class="news-support card h-100 shadow-sm">
                             <div class="image-container">
@@ -421,7 +431,7 @@
                     <legend>Email Newsletter Sign-Up</legend>
                     <div class="row mb-3">
                         <div class="col-lg-6">
-                            <label for="inputName" class="form-label">Your Name <span class="asterisk">*</span></label>
+                            <label for="inputName" class="fordrop-label">Your Name <span class="asterisk">*</span></label>
                             <input type="text" class="form-control" id="inputName">
                         </div>
                         <div class="col-lg-6">

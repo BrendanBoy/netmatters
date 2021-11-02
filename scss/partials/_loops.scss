@@ -21,8 +21,7 @@
 
 
 // setting up the news cards, 
-// I wanted to set up their buttons too but I couldn't figure it out
-// they seem to be too deeply enmeshed in bootstrap
+// I might come back to this for setting up their button behaviour
 
 @each $name, $colour in ($service-colours) {
   .news-#{$name} h3 a {

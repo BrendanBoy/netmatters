@@ -1,9 +1,11 @@
 .btn {
     line-height: 35px;
+    transition-duration: 0s;
     @include button-size(5px, 15px, 1.063rem, 3px) 
 }
 
 .btn-top {
+    height: 56px;
     min-width:62px;
     line-height: 46px;
     margin-left: 20px;
@@ -16,4 +18,8 @@
 .btn-hero {
     line-height: 50px;
     @include button-size(5px, 20px, 1.25rem, 3px)
+}
+
+button .title {
+    margin-top: 5px;
 }

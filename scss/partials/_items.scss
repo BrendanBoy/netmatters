@@ -6,6 +6,19 @@
   }
 }
 
+.telephone {
+  font-size: 32px;
+  margin-left: 20px;
+  align-self: center;
+  a:hover {
+    color: inherit;
+    border-bottom: solid 3px $altDark;
+  }
+}
+ #search-box {
+  margin-left: 20px;
+ }
+
 .hamburger {
   font-size: 12px;
   line-height: 12px;

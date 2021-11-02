@@ -1,0 +1,101 @@
+#main-nav {
+    background: $altDark;
+    color: white;
+    text-transform: uppercase;
+} 
+
+/* Adding the outside border */
+.drop {
+    // list-style-position: outside;
+    border-left: 1px solid hsla(0, 0%, 100%, 0.1);
+    // border-right: 1px solid rgba(0, 0, 0, 0.25); 
+    // This went a bit out of bounds, not sure why, think it may be due to the scroll bar.
+}
+
+/* The container for positioning the dropdown */
+.drop-box {
+    position: relative;
+    padding: 19px 0 18px;
+    border-right: 1px solid hsla(0, 0%, 100%, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+/* Styling the dropdown button & the icon inside */
+.drop-btn {
+    font-size: 18px;
+    line-height: 18px;
+    .icon {
+        font-size: 1.438rem;
+        line-height: 1;
+        padding-bottom: 10px;
+    }
+}
+
+// Drop container
+
+/* The dropdown content */
+.drop-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    bottom: -45px;
+    padding-left: 0;
+    height: 45px;
+    width: 970px;
+    font-size: 13px;
+    list-style-type: "-    ";
+    :first-child {
+        list-style-type: none;
+    }
+}
+
+/* Show the dropdown menu on hover */
+.drop-box:hover .drop-menu {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+// Positioning dropdowns 
+// I need to neaten this up
+.support-menu {
+    left: -162px;
+}
+.telecoms-menu {
+    left: -323px;
+}
+.software-menu {
+    left: -485px;
+}
+.marketing-menu {
+    left: -647px;
+}
+.security-menu {
+    left: -808px;
+}
+
+// List items
+.drop-menu li {
+    padding-right: 40px;
+}
+
+// Dealing with the main navigation colours
+@each $name, $colour in ($service-colours) {
+    .#{$name}-box {
+        &:hover {
+            background-color: $colour;
+            a, 
+            a i {
+                color: white;
+            }
+        }
+    }
+    .#{$name}-btn {
+        .icon {
+            color: $colour;
+        }
+    }
+    .#{$name}-menu {
+        background: darken($colour, 10%);
+    }
+}

@@ -1,32 +1,40 @@
-@import
 // importing my utilities
+@import
 'partials/my-variables',
 'partials/my-mixins',
-'partials/loops',
+'partials/loops';
 
 // importing the font (I'll need to trim this down at some point)
-url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100,0,200,0,300,0,400,0,500,0,600,0,700,0,800,0,900,1,100,1,200,1,300,1,400,1,500,1,600,1,700,1,800,1,900&display=swap'),
+@import
+url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100,0,200,0,300,0,400,0,500,0,600,0,700,0,800,0,900,1,100,1,200,1,300,1,400,1,500,1,600,1,700,1,800,1,900&display=swap');
 
 // import the bootstrap functions & variables
+@import
 "../node_modules/bootstrap/scss/_functions",
-"../node_modules/bootstrap/scss/_variables",
+"../node_modules/bootstrap/scss/_variables";
 
 // fix the colours
-'partials/colour-fixing',
+@import
+'partials/colour-fixing';
 
 // import hamburgers
-'../hamburgers/hamburgers',
+@import
+'../hamburgers/hamburgers';
 
 // import  the rest of the bootstrap sass lib
-'../node_modules/bootstrap/scss/bootstrap',
+@import
+'../node_modules/bootstrap/scss/bootstrap';
 
 // import my button modifications
-'partials/button-mods',
+@import
+'partials/button-mods';
 
 // import my transitions & transforms
-'partials/my-tnt',
+@import
+'partials/my-tnt';
 
 // import base styles
+@import
 'partials/base',
 'partials/items',
 'partials/sections';
@@ -35,3 +43,6 @@ url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100,0,200,0,30
 .frame-up {
   border: solid 1px red;
 }
+
+// current work
+@import 'partials/main-nav';
