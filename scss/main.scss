@@ -37,7 +37,8 @@ url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100,0,200,0,30
 @import
 'partials/base',
 'partials/items',
-'partials/sections';
+'partials/sections',
+'partials/main-nav';
 
 // This is just here to help me out :-/
 .frame-up {
@@ -45,4 +46,4 @@ url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100,0,200,0,30
 }
 
 // current work
-@import 'partials/main-nav';
+// @import ;

@@ -11257,17 +11257,46 @@ label {
 }
 
 #hero {
-  height: calc(100vh - 181px);
-  background-image: url("../img/carousel/web-design.jpeg");
+  height: calc(100vh - 157px);
+  min-height: 531px;
+  background-image: url("../../img/carousel/web-design.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-top: 1px solid white;
+  background-image: linear-gradient(270deg, transparent 25%, #000), url("../../img/carousel/web-design.jpeg");
+}
+#hero h1, #hero .h1 {
+  font-size: 48px;
+}
+#hero .lead {
+  text-align: center;
+  line-height: 36px;
+  margin-bottom: 35px;
 }
 
+@media screen and (min-width: 576px) {
+  #hero {
+    height: calc(100vh - 171px);
+  }
+}
+@media screen and (min-width: 768px) {
+  #hero {
+    height: calc(100vh - 110px);
+  }
+}
+@media screen and (min-width: 992px) {
+  #hero {
+    height: calc(100vh - 224px);
+  }
+  #hero .lead {
+    text-align: left;
+  }
+}
 #about {
   color: white;
   background: #333645;
-  background-image: url("../img/net-back.png");
+  background-image: url("../../img/net-back.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11339,10 +11368,6 @@ footer a:hover {
 }
 .socials a {
   padding: 0 10px;
-}
-
-.frame-up {
-  border: solid 1px red;
 }
 
 #main-nav {
@@ -11516,4 +11541,8 @@ footer a:hover {
 
 .security-menu {
   background: #de093f;
+}
+
+.frame-up {
+  border: solid 1px red;
 }/*# sourceMappingURL=main.css.map */
