@@ -11292,24 +11292,6 @@ label {
   margin-bottom: 35px;
 }
 
-@media screen and (min-width: 576px) {
-  #hero {
-    height: calc(100vh - 180px);
-  }
-}
-@media screen and (min-width: 768px) {
-  #hero {
-    height: calc(100vh - 110px);
-  }
-}
-@media screen and (min-width: 992px) {
-  #hero {
-    height: calc(100vh - 224px);
-  }
-  #hero .lead {
-    text-align: left;
-  }
-}
 #about {
   color: white;
   background: #333645;
@@ -11417,11 +11399,22 @@ footer a:hover {
   padding-bottom: 10px;
 }
 
+.back-bar {
+  background-color: white;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  bottom: -45px;
+  height: 45px;
+  width: 100vw;
+  margin-left: calc(-100vw / 2 + 970px / 2);
+}
+
 /* The dropdown content */
 .drop-menu {
   display: none;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   bottom: -45px;
   padding-left: 0;
   height: 45px;
@@ -11440,23 +11433,32 @@ footer a:hover {
   align-items: center;
 }
 
-.support-menu {
+.drop-box:hover .back-bar {
+  display: flex;
+}
+
+.support-menu,
+.support-bar {
   left: -162px;
 }
 
-.telecoms-menu {
+.telecoms-menu,
+.telecoms-bar {
   left: -323px;
 }
 
-.software-menu {
+.software-menu,
+.software-bar {
   left: -485px;
 }
 
-.marketing-menu {
+.marketing-menu,
+.marketing-bar {
   left: -647px;
 }
 
-.security-menu {
+.security-menu,
+.security-bar {
   left: -808px;
 }
 
@@ -11476,6 +11478,7 @@ footer a:hover {
   color: #926fb1;
 }
 
+.design-bar,
 .design-menu {
   background: #79539a;
 }
@@ -11492,6 +11495,7 @@ footer a:hover {
   color: #4183d7;
 }
 
+.support-bar,
 .support-menu {
   background: #286abd;
 }
@@ -11508,6 +11512,7 @@ footer a:hover {
   color: #d64541;
 }
 
+.telecoms-bar,
 .telecoms-menu {
   background: #bc2c28;
 }
@@ -11524,6 +11529,7 @@ footer a:hover {
   color: #67809f;
 }
 
+.software-bar,
 .software-menu {
   background: #526781;
 }
@@ -11540,6 +11546,7 @@ footer a:hover {
   color: #2ecc71;
 }
 
+.marketing-bar,
 .marketing-menu {
   background: #25a25a;
 }
@@ -11556,10 +11563,64 @@ footer a:hover {
   color: #f62459;
 }
 
+.security-bar,
 .security-menu {
   background: #de093f;
 }
 
+@media screen and (min-width: 576px) {
+  #hero {
+    height: calc(100vh - 180px);
+  }
+}
+@media screen and (min-width: 768px) {
+  #hero {
+    height: calc(100vh - 110px);
+  }
+}
+@media screen and (min-width: 992px) {
+  #hero {
+    height: calc(100vh - 224px);
+  }
+  #hero .lead {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .drop-menu {
+    width: 1200px;
+    font-size: 16px;
+  }
+
+  .back-bar {
+    margin-left: calc(-100vw / 2 + 1200px / 2);
+  }
+
+  .support-menu,
+.support-bar {
+    left: -198px;
+  }
+
+  .telecoms-menu,
+.telecoms-bar {
+    left: -396px;
+  }
+
+  .software-menu,
+.software-bar {
+    left: -594px;
+  }
+
+  .marketing-menu,
+.marketing-bar {
+    left: -792px;
+  }
+
+  .security-menu,
+.security-bar {
+    left: -990px;
+  }
+}
 .frame-up {
   border: solid 1px red;
 }/*# sourceMappingURL=main.css.map */
