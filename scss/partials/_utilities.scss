@@ -1,0 +1,21 @@
+
+// This is just here to help me out :-/
+.frame-up {
+    border: solid 1px red;
+  }
+
+// Used to find the correct percentage for darkening the drop-down menu colour
+// @for $i from 1 through 100 {
+//     .box-#{$i} {
+//         $pc: $i * 1%;
+//         background-color: darken($design, $pc);
+//     }
+// }
+
+
+// Used to check this was correct for all values
+// @each $section, $colour in $service-colours {
+//     #{$section}-dark {
+//         color: darken($color: $colour, $amount: 10%);
+//     }
+// }

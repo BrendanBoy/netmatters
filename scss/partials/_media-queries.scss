@@ -20,33 +20,20 @@
     }
 }
 
-// I need to find a DRYer way to do this
 @media screen and (min-width: 1260px) {
     .drop-menu {
         width: 1200px;
         font-size: 16px;
     }
+    
     .back-bar {
         margin-left: calc(-100vw / 2 + 1200px / 2);
     }
-    .support-menu,
-    .support-bar {
-        left: -198px;
-    }
-    .telecoms-menu,
-    .telecoms-bar {
-        left: -396px;
-    }
-    .software-menu,
-    .software-bar {
-        left: -594px;
-    }
-    .marketing-menu,
-    .marketing-bar {
-        left: -792px;
-    }
-    .security-menu,
-    .security-bar {
-        left: -990px;
+
+    @each $name, $colour in $service-colours {
+        .#{$name}-menu,
+        .#{$name}-bar {
+            left: -198px * (index(($service-colours), ($name $colour)) - 1);
+        }
     }
 }

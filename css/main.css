@@ -11437,29 +11437,34 @@ footer a:hover {
   display: flex;
 }
 
+.design-menu,
+.design-bar {
+  left: 0px;
+}
+
 .support-menu,
 .support-bar {
-  left: -162px;
+  left: -159px;
 }
 
 .telecoms-menu,
 .telecoms-bar {
-  left: -323px;
+  left: -318px;
 }
 
 .software-menu,
 .software-bar {
-  left: -485px;
+  left: -477px;
 }
 
 .marketing-menu,
 .marketing-bar {
-  left: -647px;
+  left: -636px;
 }
 
 .security-menu,
 .security-bar {
-  left: -808px;
+  left: -795px;
 }
 
 .drop-menu li {
@@ -11596,6 +11601,11 @@ footer a:hover {
     margin-left: calc(-100vw / 2 + 1200px / 2);
   }
 
+  .design-menu,
+.design-bar {
+    left: 0px;
+  }
+
   .support-menu,
 .support-bar {
     left: -198px;
@@ -11620,7 +11630,4 @@ footer a:hover {
 .security-bar {
     left: -990px;
   }
-}
-.frame-up {
-  border: solid 1px red;
 }/*# sourceMappingURL=main.css.map */

@@ -69,26 +69,11 @@
 }
 
 // Positioning dropdowns 
-// I need to neaten this up
-.support-menu,
-.support-bar {
-    left: -162px;
-}
-.telecoms-menu,
-.telecoms-bar {
-    left: -323px;
-}
-.software-menu,
-.software-bar {
-    left: -485px;
-}
-.marketing-menu,
-.marketing-bar {
-    left: -647px;
-}
-.security-menu,
-.security-bar {
-    left: -808px;
+@each $name, $colour in $service-colours {
+    .#{$name}-menu,
+    .#{$name}-bar {
+        left: -159px * (index(($service-colours), ($name $colour)) - 1);
+    }
 }
 
 // List items
