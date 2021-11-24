@@ -20,12 +20,13 @@
   width: 100%;
   height: auto;
   overflow: hidden;
-}
-
-.card-img-top:hover {
-  opacity: 0.7;
-  transform: scale(1.1);
-  transition: all 0.25s;
+  &:hover {
+    .card-img-top {
+      opacity: 0.7;
+      transform: scale(1.1);
+      transition: all 0.25s;
+    }
+  }
 }
 
 // a rough attempt to mimic the checkbox from the example site
@@ -36,5 +37,10 @@ input[type=checkbox] {
 
 .form-check-input:checked {
   background-color: $altDark;
+  border-color: $altDark;
+}
+
+.form-check-input:focus {
+  box-shadow: none;
   border-color: $altDark;
 }

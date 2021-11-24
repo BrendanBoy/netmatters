@@ -1,7 +1,11 @@
 .btn {
     line-height: 35px;
     transition-duration: 0s;
-    @include button-size(5px, 15px, 1.063rem, 3px) 
+    @include button-size(5px, 15px, 1.063rem, 3px);
+}
+
+.btn:focus {
+    box-shadow: none;
 }
 
 .btn-top {
@@ -11,6 +15,9 @@
     margin-left: 20px;
     @include button-size(5px, 15px, 1.125rem, 3px);
     &:hover {
+        color: white;
+    }
+    &:focus {
         color: white;
     }
 }

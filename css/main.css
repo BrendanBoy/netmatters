@@ -134,12 +134,20 @@
   margin-bottom: 15px;
 }
 
+.news-design .card-label {
+  background: #926fb1;
+}
+
 .news-support h3 a, .news-support .h3 a {
   color: #4183d7;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 600;
   margin-bottom: 15px;
+}
+
+.news-support .card-label {
+  background: #4183d7;
 }
 
 .news-telecoms h3 a, .news-telecoms .h3 a {
@@ -150,12 +158,20 @@
   margin-bottom: 15px;
 }
 
+.news-telecoms .card-label {
+  background: #d64541;
+}
+
 .news-software h3 a, .news-software .h3 a {
   color: #67809f;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 600;
   margin-bottom: 15px;
+}
+
+.news-software .card-label {
+  background: #67809f;
 }
 
 .news-marketing h3 a, .news-marketing .h3 a {
@@ -166,12 +182,20 @@
   margin-bottom: 15px;
 }
 
+.news-marketing .card-label {
+  background: #2ecc71;
+}
+
 .news-security h3 a, .news-security .h3 a {
   color: #f62459;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 600;
   margin-bottom: 15px;
+}
+
+.news-security .card-label {
+  background: #f62459;
 }
 
 .bi-facebook:hover {
@@ -11047,6 +11071,10 @@ textarea.form-control-lg {
   border-radius: 3px;
 }
 
+.btn:focus {
+  box-shadow: none;
+}
+
 .btn-top {
   height: 56px;
   min-width: 62px;
@@ -11057,6 +11085,9 @@ textarea.form-control-lg {
   border-radius: 3px;
 }
 .btn-top:hover {
+  color: white;
+}
+.btn-top:focus {
   color: white;
 }
 
@@ -11091,8 +11122,7 @@ textarea.form-control-lg {
   height: auto;
   overflow: hidden;
 }
-
-.card-img-top:hover {
+.image-container:hover .card-img-top {
   opacity: 0.7;
   transform: scale(1.1);
   transition: all 0.25s;
@@ -11105,6 +11135,11 @@ input[type=checkbox] {
 
 .form-check-input:checked {
   background-color: #333645;
+  border-color: #333645;
+}
+
+.form-check-input:focus {
+  box-shadow: none;
   border-color: #333645;
 }
 
@@ -11253,12 +11288,33 @@ small, .small {
   border-radius: 50%;
 }
 
+.card-label {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: 1;
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: white;
+}
+.card-label:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 legend {
   font-size: 32px;
 }
 
 label {
   font-weight: 600;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.1rem rgba(13, 110, 253, 0.25);
 }
 
 .form-check-label {
@@ -11305,10 +11361,6 @@ label {
 #about {
   color: white;
   background: #333645;
-  background-image: url("../../img/net-back.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #headline {
@@ -11599,6 +11651,13 @@ footer a:hover {
   }
   #hero .lead {
     text-align: left;
+  }
+
+  #about {
+    background-image: url("../../img/net-back.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media screen and (min-width: 1260px) {

@@ -18,6 +18,9 @@
             text-align: left;
         }
     }
+    #about {
+        @include picfix('../../img/net-back.png');
+    }
 }
 
 @media screen and (min-width: 1260px) {
