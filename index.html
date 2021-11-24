@@ -45,7 +45,7 @@
                         <span class="hamburger-box">
                             <span class="hamburger-inner"></span>
                         </span><br>
-                        <div class="title">Menu</div>
+                        <span class="title">Menu</span>
                     </button>
                 </div>
             </div>
@@ -302,6 +302,7 @@
             </div>
         </section>
         <section id="headline">
+            <h2 class="sr-only">News</h2>
             <div class="container">
                 <div>
                     <span>Latest</span>
@@ -388,69 +389,73 @@
             </div>
         </section>
         <section id="clients" style="box-shadow: inset 0 5px 35px rgba(0,0,0,0.1);">
+            <h2 class="sr-only">Clients</h2>
             <div class="container d-none d-md-block">
                 <div class="d-flex justify-content-around py-5">
                     <div class="mx-3">
-                        <span class="tt" data-bs-placement="top" data-bs-html="true" title="<h3>Busseys</h3> <p>One of the UK's leading Ford dealerships.</p>">
+                        <div class="tt" data-bs-placement="top" data-bs-html="true" title="<h3>Busseys</h3> <p>One of the UK's leading Ford dealerships.</p>">
                             <div class="colour-change">
                                 <img src="img/clients/busseys.png" class="img-fluid" alt="Bussys logo">
                                 <img src="img/clients/busseys_greyscale.jpeg" class="greyscale img-fluid" alt="Busseys logo, grey.">
                             </div>
-                        </span>
+                        </div>
                     </div>
                     <div class="mx-3">
                         <a class="nav-link" href="#">
-                            <span class="tt" data-bs-placement="top" data-bs-html="true" title="<h3>Crane Garden Builders</h3> <p>Leading manufacturer and supplier of high-end garden rooms, summerhouses, workshops and sheds in the UK.</p>">
+                            <div class="tt" data-bs-placement="top" data-bs-html="true" title="<h3>Crane Garden Builders</h3> <p>Leading manufacturer and supplier of high-end garden rooms, summerhouses, workshops and sheds in the UK.</p>">
                                 <div class="colour-change">
                                     <img src="img/clients/crane.png" class="img-fluid" alt="Crane logo">
                                     <img src="img/clients/crane_greyscale.jpeg" class="greyscale img-fluid"  alt="Crane logo, grey">
                                 </div>
-                            </span>
+                            </div>
                         </a>
                     </div>
                     <div class="mx-3">
-                        <span class="tt" data-bs-placement="top" data-bs-html="true" title="<h3>Beat</h3> <p>The UK's eating disorder charity founded in 1989</p>">
+                        <div class="tt" data-bs-placement="top" data-bs-html="true" title="<h3>Beat</h3> <p>The UK's eating disorder charity founded in 1989</p>">
                             <div class="colour-change">
                                 <img src="img/clients/beat.png" class="img-fluid" alt="Beat logo">
                                 <img src="img/clients/beat_greyscale.jpeg" class="greyscale img-fluid" alt="Beat logo, grey">
                             </div>
-                        </span>
+                        </div>
                     </div>
                     <div class="mx-3">
                         <a href="#">
-                            <span class="tt" data-bs-placement="top" data-bs-html="true" title="<h3>Northern Diver</h3> <p>Global water based equipment manufacturers for sport, military, commercial and rescue businesses.</p>">
+                            <div class="tt" data-bs-placement="top" data-bs-html="true" title="<h3>Northern Diver</h3> <p>Global water based equipment manufacturers for sport, military, commercial and rescue businesses.</p>">
                                 <div class="colour-change">
                                     <img src="img/clients/northern-diver.png" alt="Northern Diver logo">
                                     <img src="img/clients/northern-diver_greyscale.jpeg" class="greyscale img-fluid" alt="Northern Diver logo, grey">
                                 </div>
-                            </span>
+                            </div>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
         <section id="newsletter">
+            <h2 class="sr-only">Newsletter</h2>
             <div class="container">
-                <form class="p-5">
+                <fieldset class="p-5">
                     <legend>Email Newsletter Sign-Up</legend>
-                    <div class="row mb-3">
-                        <div class="form-group col-lg-6">
-                            <label for="inputName" class="form-label">Your Name <span class="asterisk">*</span></label>
-                            <input type="text" class="form-control" id="inputName">
+                    <form>
+                        <div class="row mb-3">
+                            <div class="form-group col-lg-6">
+                                <label for="inputName" class="form-label">Your Name <span class="asterisk">*</span></label>
+                                <input type="text" class="form-control" id="inputName">
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label for="inputEmail" class="form-label">Your Email <span class="asterisk">*</span></label>
+                                <input type="email" class="form-control" id="inputEmail">
+                            </div>
                         </div>
-                        <div class="form-group col-lg-6">
-                            <label for="inputEmail" class="form-label">Your Email <span class="asterisk">*</span></label>
-                            <input type="email" class="form-control" id="inputEmail">
+                        <div class="form-check ms-2 mb-3">
+                            <input type="checkbox" class="form-check-input" value="" id="marketing">
+                            <label for="marketing" class="form-check-label">Please tick this box if you want to receive
+                                marketing information from us. Please see our <a href="#">Privacy Policy</a> for more
+                                information on how we use your data.</label>
                         </div>
-                    </div>
-                    <div class="form-check ms-2 mb-3">
-                        <input type="checkbox" class="form-check-input" value="" id="marketing">
-                        <label for="marketing" class="form-check-label">Please tick this box if you want to receive
-                            marketing information from us. Please see our <a href="#">Privacy Policy</a> for more
-                            information on how we use your data.</label>
-                    </div>
-                    <button type="submit" class="btn btn-altDark">Subscribe</button>
-                </form>
+                        <button type="submit" class="btn btn-altDark">Subscribe</button>
+                    </form>
+                </fieldset>
             </div>
         </section>
     </main>
@@ -525,7 +530,7 @@
             </div>
             <hr>
             <div class="outro">
-                <div>&copy Copyright Netmatters Ltd. 2021. All rights reserved.</div>
+                <div>&copy; Copyright Netmatters Ltd. 2021. All rights reserved.</div>
                 <span class="mx-2"> - </span>
                 <div><a href="#">Sitemap</a></div>
                 <div class="socials">
@@ -538,6 +543,7 @@
         </div>
     </footer>
     <section id="awards">
+        <h2 class="sr-only">Awards and Accreditations</h2>
         <div class="container d-none d-md-block">
             <div class="d-flex justify-content-around my-5">
                 <div class="mx-2">

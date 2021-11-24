@@ -20,6 +20,7 @@
     @include button-size(5px, 20px, 1.25rem, 3px)
 }
 
-button .title {
-    margin-top: 5px;
+.title {
+    display: block;
+    padding-top: 5px;
 }
