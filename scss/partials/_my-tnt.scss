@@ -1,5 +1,71 @@
 // Transitions & transforms
 
+// Tooltip popup for the clients section
+.tt {
+  position: relative;
+  display: block;
+}
+
+.tt .pop {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  background-color: $altDark;
+  width: 260px;
+  left: 50%;
+  margin-left: -130px;
+  bottom: calc(100% + 55px);
+  h3 {
+    position: relative;
+    font-size: 18px;
+    padding-bottom: 17px;
+    &::after {
+      content: " ";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 28px;
+      height: 3px;
+      display: block;
+      background-color: white;
+    }
+  }
+  p {
+      font-size: 13px;
+      margin: 0 0 10px;
+  }
+}
+
+// I was getting some competition for the hover state
+// So I added the greyscale class in here too
+// There has to be a neater solution to this
+.tt:hover {
+  .pop {
+    visibility: visible;
+  }
+  .greyscale {
+    opacity: 0;
+  }
+}
+
+.tt .pop::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -48px;
+  border-width: 48px;
+  border-style: solid;
+  border-color: $altDark transparent transparent transparent;
+}
+
+
+
 // client & award/accreditation sections
 .colour-change {
   position: relative;

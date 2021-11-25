@@ -11103,6 +11103,64 @@ textarea.form-control-lg {
   padding-top: 5px;
 }
 
+.tt {
+  position: relative;
+  display: block;
+}
+
+.tt .pop {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  background-color: #333645;
+  width: 260px;
+  left: 50%;
+  margin-left: -130px;
+  bottom: calc(100% + 55px);
+}
+.tt .pop h3, .tt .pop .h3 {
+  position: relative;
+  font-size: 18px;
+  padding-bottom: 17px;
+}
+.tt .pop h3::after, .tt .pop .h3::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 28px;
+  height: 3px;
+  display: block;
+  background-color: white;
+}
+.tt .pop p {
+  font-size: 13px;
+  margin: 0 0 10px;
+}
+
+.tt:hover .pop {
+  visibility: visible;
+}
+.tt:hover .greyscale {
+  opacity: 0;
+}
+
+.tt .pop::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -48px;
+  border-width: 48px;
+  border-style: solid;
+  border-color: #333645 transparent transparent transparent;
+}
+
 .colour-change {
   position: relative;
 }
