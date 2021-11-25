@@ -102,26 +102,3 @@
     cursor: pointer;
   }
 }
-
-// Newsletter sign-up
-legend {
-  font-size: 32px;
-}
-
-label {
-  font-weight: 600;
-}
-
-.form-control:focus {
-  box-shadow: 0 0 0 0.1rem rgba(13, 110, 253, 0.25);
-}
-
-.form-check-label {
-  line-height: 32px;
-  margin-left: 18px;
-}
-
-.asterisk {
-  color: #d24d57;
-}
-

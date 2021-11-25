@@ -1,0 +1,41 @@
+// Newsletter sign-up form
+legend {
+    font-size: 32px;
+}
+
+label {
+    font-weight: 600;
+}
+
+.asterisk {
+    color: #d24d57;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.1rem rgba(13, 110, 253, 0.25);
+}
+
+.form-check {
+    padding-left: 48px;
+    &-label {
+        line-height: 32px;
+    }
+    &-input {
+        &[type=checkbox] {
+            height: 32px;
+            width: 32px;
+            border-radius: 4px;
+            border: 3px solid $altDark;
+            background-color: $newsletter;
+            margin-left: -56px;
+        }
+        &:checked {
+            background-color: $altDark;
+            border-color: $altDark;
+        }
+        &:focus {
+            box-shadow: none;
+            border-color: $altDark;
+        }
+    }
+}

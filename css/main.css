@@ -11186,21 +11186,6 @@ textarea.form-control-lg {
   transition: all 0.25s;
 }
 
-input[type=checkbox] {
-  border-color: #333645;
-  transform: scale(2);
-}
-
-.form-check-input:checked {
-  background-color: #333645;
-  border-color: #333645;
-}
-
-.form-check-input:focus {
-  box-shadow: none;
-  border-color: #333645;
-}
-
 body {
   color: #333645;
   letter-spacing: 0.4px;
@@ -11361,27 +11346,6 @@ small, .small {
 .card-label:hover {
   text-decoration: underline;
   cursor: pointer;
-}
-
-legend {
-  font-size: 32px;
-}
-
-label {
-  font-weight: 600;
-}
-
-.form-control:focus {
-  box-shadow: 0 0 0 0.1rem rgba(13, 110, 253, 0.25);
-}
-
-.form-check-label {
-  line-height: 32px;
-  margin-left: 18px;
-}
-
-.asterisk {
-  color: #d24d57;
 }
 
 .top {
@@ -11691,6 +11655,45 @@ footer a:hover {
 .security-bar,
 .security-menu {
   background: #de093f;
+}
+
+legend {
+  font-size: 32px;
+}
+
+label {
+  font-weight: 600;
+}
+
+.asterisk {
+  color: #d24d57;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.1rem rgba(13, 110, 253, 0.25);
+}
+
+.form-check {
+  padding-left: 48px;
+}
+.form-check-label {
+  line-height: 32px;
+}
+.form-check-input[type=checkbox] {
+  height: 32px;
+  width: 32px;
+  border-radius: 4px;
+  border: 3px solid #333645;
+  background-color: #ddd;
+  margin-left: -56px;
+}
+.form-check-input:checked {
+  background-color: #333645;
+  border-color: #333645;
+}
+.form-check-input:focus {
+  box-shadow: none;
+  border-color: #333645;
 }
 
 @media screen and (min-width: 576px) {

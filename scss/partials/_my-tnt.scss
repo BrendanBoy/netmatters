@@ -64,8 +64,6 @@
   border-color: $altDark transparent transparent transparent;
 }
 
-
-
 // client & award/accreditation sections
 .colour-change {
   position: relative;
@@ -93,20 +91,4 @@
       transition: all 0.25s;
     }
   }
-}
-
-// a rough attempt to mimic the checkbox from the example site
-input[type=checkbox] {
-  border-color: $altDark;
-  transform: scale(2);
-}
-
-.form-check-input:checked {
-  background-color: $altDark;
-  border-color: $altDark;
-}
-
-.form-check-input:focus {
-  box-shadow: none;
-  border-color: $altDark;
 }
