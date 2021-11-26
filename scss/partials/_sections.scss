@@ -88,6 +88,10 @@ footer {
   margin-bottom: 30px;
 }
 
+.foot-rule {
+  margin-bottom: 14px;
+}
+
 .outro {
   display: flex;
 }
@@ -95,8 +99,10 @@ footer {
 .socials {
   display: flex;
   margin-left: auto;
+  margin-top: -7px;
   font-size: 0.9rem;
-  a {
-    padding: 0 10px;
-  }
+  i {
+    @include circle-icon(38px);
+    padding-top: 12px;
+}
 }

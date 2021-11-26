@@ -38,12 +38,10 @@
 
 
 // setting up the colours for the social media icons
-// I might look for some icons that more closly match the ones on the orinal site
-// then I can reuse the circle-icon mixin
 @each $name, $colour in ($socials-colours) {
-  .bi-#{$name} {
+  .fa-#{$name} {
     &:hover {
-      color: $colour;
+      background-color: $colour;
     }
   }
 }
