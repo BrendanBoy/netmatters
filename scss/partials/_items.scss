@@ -102,3 +102,25 @@
     cursor: pointer;
   }
 }
+
+// Service card specific
+#service-cards h2 {
+  position: relative;
+  &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 28px;
+      height: 3px;
+      display: block;
+      background-color: $altDark;
+  }
+}
+#service-cards .card:hover {
+  h2::after {
+      background-color: white;
+  }
+}
