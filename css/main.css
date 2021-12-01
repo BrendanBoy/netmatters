@@ -11369,6 +11369,10 @@ small, .small {
   background-color: white;
 }
 
+#news-cards .card-title:hover {
+  text-decoration: underline;
+}
+
 .top {
   display: flex;
 }
