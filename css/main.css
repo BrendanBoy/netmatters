@@ -11141,6 +11141,7 @@ textarea.form-control-lg {
 .tt .pop p {
   font-size: 13px;
   margin: 0 0 10px;
+  line-height: 1.375;
 }
 
 .tt:hover .pop {
