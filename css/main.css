@@ -11189,6 +11189,7 @@ textarea.form-control-lg {
 body {
   color: #333645;
   letter-spacing: 0.4px;
+  overflow-x: hidden;
 }
 
 h1, .h1 {
