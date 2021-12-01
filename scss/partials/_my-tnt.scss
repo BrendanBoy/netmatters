@@ -17,7 +17,7 @@
   width: 260px;
   left: 50%;
   margin-left: -130px;
-  bottom: calc(100% + 55px);
+  bottom: calc(100% + 50px);
   h3 {
     position: relative;
     font-size: 18px;
@@ -58,8 +58,8 @@
   position: absolute;
   top: 100%;
   left: 50%;
-  margin-left: -48px;
-  border-width: 48px;
+  margin-left: -36px;
+  border-width: 36px;
   border-style: solid;
   border-color: $altDark transparent transparent transparent;
 }

@@ -11119,7 +11119,7 @@ textarea.form-control-lg {
   width: 260px;
   left: 50%;
   margin-left: -130px;
-  bottom: calc(100% + 55px);
+  bottom: calc(100% + 50px);
 }
 .tt .pop h3, .tt .pop .h3 {
   position: relative;
@@ -11155,8 +11155,8 @@ textarea.form-control-lg {
   position: absolute;
   top: 100%;
   left: 50%;
-  margin-left: -48px;
-  border-width: 48px;
+  margin-left: -36px;
+  border-width: 36px;
   border-style: solid;
   border-color: #333645 transparent transparent transparent;
 }
