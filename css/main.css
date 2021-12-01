@@ -11180,10 +11180,13 @@ textarea.form-control-lg {
   height: auto;
   overflow: hidden;
 }
+.image-container .card-img-top {
+  transition-timing-function: ease-in-out;
+  transition: all 0.25s;
+}
 .image-container:hover .card-img-top {
   opacity: 0.7;
   transform: scale(1.1);
-  transition: all 0.25s;
 }
 
 body {
