@@ -11430,6 +11430,11 @@ small, .small {
   text-transform: uppercase;
 }
 
+.client-imgs {
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+
 #newsletter {
   background: #ddd;
 }
