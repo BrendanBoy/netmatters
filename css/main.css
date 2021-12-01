@@ -11382,6 +11382,10 @@ small, .small {
   align-items: center;
 }
 
+.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+  border-radius: 0;
+}
+
 #hero {
   height: calc(100vh - 166px);
   min-height: 531px;
