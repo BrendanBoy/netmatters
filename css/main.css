@@ -11090,6 +11090,10 @@ textarea.form-control-lg {
   color: white;
 }
 
+.btn-inner {
+  min-width: 116px;
+}
+
 .btn-hero {
   line-height: 50px;
   padding: 5px 20px;
