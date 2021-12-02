@@ -11,8 +11,16 @@ label {
     color: #d24d57;
 }
 
+#newsletter .form-control {
+    height: 47px;
+    border-radius: 2px;
+}
+
 .form-control:focus {
-    box-shadow: 0 0 0 0.1rem rgba(13, 110, 253, 0.25);
+    // box-shadow: 0 0 0 0.1rem rgba(13, 110, 253, 0.25);
+    border-color: #5bc0de;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 
 .form-check {
