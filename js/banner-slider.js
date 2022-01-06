@@ -6,5 +6,6 @@ var slider = tns({
     controls: false,
     navPosition: "bottom",
     autoplayButtonOutput: false,
-    mouseDrag: true
+    mouseDrag: true,
+    edgePadding: -2,
 });
