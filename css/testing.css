@@ -19,8 +19,8 @@
     border: none;
     margin: 0 10px;
     border-radius: 50%;
-    /* background-color: hsla(0, 0%, 100%, 0.5); */
-    background: #d6d6d6;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    /* background: #d6d6d6; */
 }
 
 .tns-nav button:hover {
@@ -28,7 +28,7 @@
 }
 
 .tns-nav .tns-nav-active,
-.tns-nav .tns-nav-active:hover {
+.tns-nav .tns-nav-active:focus {
     background-color: #fff;
     outline-style: solid;
     outline-color: #fff;
