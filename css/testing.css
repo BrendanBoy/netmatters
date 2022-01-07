@@ -1,0 +1,37 @@
+/* Navigation dots for the Banner Slider */
+.tns-outer {
+    position: relative;
+}
+
+.tns-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.tns-nav button {
+    height: 11px;
+    width: 11px;
+    border: none;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    /* background: #d6d6d6; */
+}
+
+.tns-nav button:hover {
+    background-color: #869791;
+}
+
+.tns-nav .tns-nav-active,
+.tns-nav .tns-nav-active:hover {
+    background-color: #fff;
+    outline-style: solid;
+    outline-color: #fff;
+    outline-width: 2px;
+    outline-offset: 5px;
+}
