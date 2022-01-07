@@ -19,8 +19,8 @@
     border: none;
     margin: 0 10px;
     border-radius: 50%;
-    background-color: hsla(0, 0%, 100%, 0.5);
-    /* background: #d6d6d6; */
+    /* background-color: hsla(0, 0%, 100%, 0.5); */
+    background: #d6d6d6;
 }
 
 .tns-nav button:hover {
