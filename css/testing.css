@@ -19,8 +19,8 @@
     border: none;
     margin: 0 10px;
     border-radius: 50%;
-    background-color: hsla(0, 0%, 100%, 0.5);
-    /* background: #d6d6d6; */
+    /* background-color: hsla(0, 0%, 100%, 0.5); */
+    background: #d6d6d6;
 }
 
 .tns-nav button:hover {
@@ -34,4 +34,26 @@
     outline-color: #fff;
     outline-width: 2px;
     outline-offset: 5px;
+}
+
+/* Slide Formatting */
+.my-slider > div {
+    height: calc(100vh - 166px);
+    background-color: purple;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .my-slider > div {
+        height: calc(100vh - 104px);
+        background-color: red;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .my-slider > div {
+        height: calc(100vh - 224px);
+        background-color: cornflowerblue;
+    }
 }
