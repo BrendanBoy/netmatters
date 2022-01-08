@@ -39,9 +39,19 @@
 /* Slide Formatting */
 .my-slider > div {
     height: calc(100vh - 166px);
+    min-height: 531px;
+    color: #fff;
+    border-top: 1px solid white;
     background-color: purple;
 }
-
+.my-slider > div h1 {
+    font-size: 48px;
+}
+.my-slider > div .lead {
+    text-align: center;
+    line-height: 36px;
+    margin-bottom: 35px;
+}
 
 /* Media Queries */
 @media screen and (min-width: 768px) {
@@ -55,5 +65,8 @@
     .my-slider > div {
         height: calc(100vh - 224px);
         background-color: cornflowerblue;
+    }
+    .my-slider > div .lead {
+        text-align: left;
     }
 }
