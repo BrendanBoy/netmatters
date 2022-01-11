@@ -11704,17 +11704,14 @@ footer a:hover {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-
 .tns-nav button {
   height: 11px;
   width: 11px;
   border: none;
   margin: 0 10px;
   border-radius: 50%;
-  /* background-color: hsla(0, 0%, 100%, 0.5); */
   background: #d6d6d6;
 }
-
 .tns-nav button:hover {
   background-color: #869791;
 }
@@ -11729,22 +11726,16 @@ footer a:hover {
 }
 
 /* Slide Formatting */
-/* .my-slider .container {
-    background-color: chartreuse;
-} */
 .my-slider > div {
   height: calc(100vh - 168px);
   min-height: 531px;
   color: #fff;
   border-top: 1px solid white;
-  background-color: purple;
   text-align: center;
 }
-
 .my-slider > div h1, .my-slider > div .h1 {
   font-size: 48px;
 }
-
 .my-slider > div .lead {
   line-height: 36px;
   margin-bottom: 35px;
@@ -11752,51 +11743,93 @@ footer a:hover {
 
 /* Slide Images */
 #slide-design {
-  background-image: url("../../img/carousel/web-design.jpeg");
+  position: relative;
+  background-image: url("../../img/carousel/design.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(270deg, transparent 25%, #000), url("../../img/carousel/web-design.jpeg");
+  background-image: linear-gradient(270deg, transparent 25%, #000), url("../../img/carousel/design.jpeg");
+}
+#slide-design .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #slide-support {
-  background-image: url("../../img/carousel/it-support.jpeg");
+  position: relative;
+  background-image: url("../../img/carousel/support.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(270deg, transparent 25%, #000), url("../../img/carousel/it-support.jpeg");
+  background-image: linear-gradient(270deg, transparent 25%, #000), url("../../img/carousel/support.jpeg");
+}
+#slide-support .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #slide-telecoms {
-  background-image: url("../../img/carousel/telecoms-services.jpeg");
+  position: relative;
+  background-image: url("../../img/carousel/telecoms.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(270deg, transparent 25%, #000), url("../../img/carousel/telecoms-services.jpeg");
+  background-image: linear-gradient(270deg, transparent 25%, #000), url("../../img/carousel/telecoms.jpeg");
+}
+#slide-telecoms .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #slide-software {
-  background-image: url("../../img/carousel/bespoke-software.jpeg");
+  position: relative;
+  background-image: url("../../img/carousel/software.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(270deg, transparent 25%, #000), url("../../img/carousel/bespoke-software.jpeg");
+  background-image: linear-gradient(270deg, transparent 25%, #000), url("../../img/carousel/software.jpeg");
+}
+#slide-software .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #slide-marketing {
-  background-image: url("../../img/carousel/digital-marketing.jpeg");
+  position: relative;
+  background-image: url("../../img/carousel/marketing.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(270deg, transparent 25%, #000), url("../../img/carousel/digital-marketing.jpeg");
+  background-image: linear-gradient(270deg, transparent 25%, #000), url("../../img/carousel/marketing.jpeg");
+}
+#slide-marketing .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #slide-security {
-  background-image: url("../../img/carousel/cyber-security.jpeg");
+  position: relative;
+  background-image: url("../../img/carousel/security.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(270deg, transparent 25%, #000), url("../../img/carousel/cyber-security.jpeg");
+  background-image: linear-gradient(270deg, transparent 25%, #000), url("../../img/carousel/security.jpeg");
+}
+#slide-security .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Media Queries */
@@ -11804,14 +11837,12 @@ footer a:hover {
   .my-slider > div {
     height: calc(100vh - 110px);
     min-height: 589px;
-    background-color: red;
   }
 }
 @media screen and (min-width: 992px) {
   .my-slider > div {
     height: calc(100vh - 209.02px);
     min-height: 489.98px;
-    background-color: cornflowerblue;
   }
 
   .my-slider > div .lead {
