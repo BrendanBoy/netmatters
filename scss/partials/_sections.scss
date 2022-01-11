@@ -15,21 +15,21 @@
   border-radius: 0;
 }
 
-#hero {
-  height: calc(100vh - 166px);
-  min-height: 531px;
-  @include picfix('../../img/carousel/web-design.jpeg');
-  border-top: 1px solid white;
-  background-image: linear-gradient(270deg,transparent 25%,#000), url('../../img/carousel/web-design.jpeg');
-  h1 {
-    font-size: 48px;
-  }
-  .lead {
-    text-align: center;
-    line-height: 36px;
-    margin-bottom: 35px;
-  }
-}
+// #hero {
+//   height: calc(100vh - 166px);
+//   min-height: 531px;
+//   @include picfix('../../img/carousel/web-design.jpeg');
+//   border-top: 1px solid white;
+//   background-image: linear-gradient(270deg,transparent 25%,#000), url('../../img/carousel/web-design.jpeg');
+//   h1 {
+//     font-size: 48px;
+//   }
+//   .lead {
+//     text-align: center;
+//     line-height: 36px;
+//     margin-bottom: 35px;
+//   }
+// }
 
 #about {
   color: white;
