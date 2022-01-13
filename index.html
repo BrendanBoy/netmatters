@@ -19,163 +19,164 @@
 
 <body>
     <header>
-        <div class="container py-4">
-            <div class="top">
-                <div class="net-logo">
-                    <a href="#">
-                        <img class="img-fluid" src="img/f-logo.png" alt="Netmatters logo">
-                    </a>
+        <div class="header-bar">
+            <div class="container py-4">
+                <div class="top">
+                    <div class="net-logo">
+                        <a href="#">
+                            <img class="img-fluid" src="img/f-logo.png" alt="Netmatters logo">
+                        </a>
+                    </div>
+                    <div class="telephone d-md-none">
+                        <a href="#"><i class="fas fa-phone-alt"></i></a>
+                    </div>
+                    <div class="top-buttons">
+                        <a href="#" class="btn btn-top btn-support d-none d-lg-block">
+                            <div class="btn-inner">
+                                <i class="fas fa-mouse"></i>
+                                Support
+                            </div>
+                        </a>
+                        <a href="#" class="btn btn-top btn-altLight d-none d-lg-block">
+                            <div class="btn-inner">
+                                <i class="fas fa-paper-plane"></i>
+                                Contact
+                            </div>
+                        </a>
+                        <a href="#" class="btn btn-top btn-altLight top-search d-none d-lg-block d-xl-none">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <form id="search-box" class="d-none d-md-block d-lg-none d-xl-block">
+                            <div class="input-group">
+                                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                                <button type="button" class="btn btn-top btn-altLight"><i class="fas fa-search"></i></button>
+                            </div>
+                        </form>
+                        <button class="hamburger hamburger--spin btn btn-top btn-altDark" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span><br>
+                            <span class="title">Menu</span>
+                        </button>
+                    </div>
                 </div>
-                <div class="telephone d-md-none">
-                    <a href="#"><i class="fas fa-phone-alt"></i></a>
-                </div>
-                <div class="top-buttons">
-                    <a href="#" class="btn btn-top btn-support d-none d-lg-block">
-                        <div class="btn-inner">
-                            <i class="fas fa-mouse"></i>
-                            Support
-                        </div>
-                    </a>
-                    <a href="#" class="btn btn-top btn-altLight d-none d-lg-block">
-                        <div class="btn-inner">
-                            <i class="fas fa-paper-plane"></i>
-                            Contact
-                        </div>
-                    </a>
-                    <a href="#" class="btn btn-top btn-altLight top-search d-none d-lg-block d-xl-none">
-                        <i class="fas fa-search"></i>
-                    </a>
-                    <form id="search-box" class="d-none d-md-block d-lg-none d-xl-block">
-                        <div class="input-group">
-                            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-                            <button type="button" class="btn btn-top btn-altLight"><i class="fas fa-search"></i></button>
-                        </div>
-                    </form>
-                    <button class="hamburger hamburger--spin btn btn-top btn-altDark" type="button">
-                        <span class="hamburger-box">
-                            <span class="hamburger-inner"></span>
-                        </span><br>
-                        <span class="title">Menu</span>
-                    </button>
-                </div>
+                <form class="mobile-search d-md-none">
+                    <input type="search" class="search-field" placeholder="Search..." aria-label="Search">
+                    <button type="button" class="search-button"><i class="fas fa-search"></i></button>
+                </form>
             </div>
-            <form class="mobile-search d-md-none">
-                <input type="search" class="search-field" placeholder="Search..." aria-label="Search">
-                <button type="button" class="search-button"><i class="fas fa-search"></i></button>
-            </form>
         </div>
+
+        <!-- main site navigation -->
+        <nav id="main-nav">
+            <ul class="drop nav nav-justified container d-none d-lg-flex">
+                
+                <li class="design-box drop-box nav-item">
+                    <a class="design-btn drop-btn" href="#">
+                        <div class="icon"><i class="bi bi-code-slash"></i></div>
+                        <div class="small">Web</div>
+                        <div>Design</div>
+                    </a>
+                    <span class="back-bar design-bar"></span>
+                    <ul class="design-menu drop-menu">
+                        <li><a href="#">Stylish Websites</a></li>
+                        <li><a href="#">Ecommerce Stores</a></li>
+                        <li><a href="#">Branding</a></li>
+                        <li><a href="#">Apps</a></li>
+                        <li><a href="#">Web Hosting</a></li>
+                        <li><a href="#">Pay Monthly Websites</a></li>
+                    </ul>
+                </li>
+                
+                <li class="support-box drop-box nav-item">
+                    <a class="support-btn drop-btn" href="#">
+                        <div class="icon"><i class="bi bi-display"></i></div>
+                        <div class="small">It</div>
+                        Support
+                    </a>
+                    <span class="back-bar support-bar"></span>
+                    <ul class="support-menu drop-menu">
+                        <li><a href="#">Managed It</a></li>
+                        <li><a href="#">Business It</a></li>
+                        <li><a href="#">Office 365</a></li>
+                        <li><a href="#">Consultancy</a></li>
+                        <li><a href="#">Cloud Provider</a></li>
+                        <li><a href="#">Cyber Security</a></li>
+                    </ul>
+                </li>
+                
+                <li class="telecoms-box drop-box nav-item">
+                    <a class="telecoms-btn drop-btn" href="#">
+                        <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="small">Telecoms</div>
+                        Services
+                    </a>
+                    <span class="back-bar telecoms-bar"></span>
+                    <ul class="telecoms-menu drop-menu">
+                        <li><a href="#">Gigabit Voucher</a></li>
+                        <li><a href="#">Hosted Voip</a></li>
+                        <li><a href="#">Business Voip</a></li>
+                        <li><a href="#">Business Broadband</a></li>
+                        <li><a href="#">Leased Line</a></li>
+                        <li><a href="#">3CX Systems</a></li>
+                    </ul>
+                </li>
+                
+                <li class="software-box drop-box nav-item">
+                    <a class="software-btn drop-btn" href="#">
+                        <div class="icon"><i class="fas fa-th"></i></div>
+                        <div class="small">Bespoke</div>
+                        Software
+                    </a>
+                    <span class="back-bar software-bar"></span>
+                    <ul class="software-menu drop-menu">
+                        <li><a href="#">Workflow</a></li>
+                        <li><a href="#">Automation</a></li>
+                        <li><a href="#">Integration</a></li>
+                        <li><a href="#">Database</a></li>
+                        <li><a href="#">Sharepoint</a></li>
+                        <li><a href="#">Management</a></li>
+                        <li><a href="#">Navision</a></li>
+                    </ul>
+                </li>
+                
+                <li class="marketing-box drop-box nav-item">
+                    <a class="marketing-btn drop-btn" href="#">
+                        <div class="icon"><i class="bi bi-bar-chart-fill"></i></div>
+                        <div class="small">Digital</div>
+                        Marketing
+                    </a>
+                    <span class="back-bar marketing-bar"></span>
+                    <ul class="marketing-menu drop-menu">
+                        <li><a href="#">Search (SEO)</a></li>
+                        <li><a href="#">Paid (PPC)</a></li>
+                        <li><a href="#">Conversion (CRO)</a></li>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Social Media</a></li>
+                        <li><a href="#">Content</a></li>
+                    </ul>
+                </li>
+                
+                <li class="security-box drop-box nav-item">
+                    <a class="security-btn drop-btn" href="#">
+                        <div class="icon"><i class="bi bi-shield-shaded"></i></div>
+                        <div class="small">Cyber</div>
+                        Security
+                    </a>
+                    <span class="back-bar security-bar"></span>
+                    <ul class="security-menu drop-menu">
+                        <li><a href="#">Assessment</a></li>
+                        <li><a href="#">Management</a></li>
+                        <li><a href="#">Penetration Testing</a></li>
+                        <li><a href="#">Cyber Essentials</a></li>
+                        <li><a href="#">PCI/DSS</a></li>
+                        <li><a href="#">Hacker Prevention</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </nav>
     </header>
-
-    <!-- main site navigation -->
-    <nav id="main-nav">
-        <ul class="drop nav nav-justified container d-none d-lg-flex">
-            
-            <li class="design-box drop-box nav-item">
-                <a class="design-btn drop-btn" href="#">
-                    <div class="icon"><i class="bi bi-code-slash"></i></div>
-                    <div class="small">Web</div>
-                    <div>Design</div>
-                </a>
-                <span class="back-bar design-bar"></span>
-                <ul class="design-menu drop-menu">
-                    <li><a href="#">Stylish Websites</a></li>
-                    <li><a href="#">Ecommerce Stores</a></li>
-                    <li><a href="#">Branding</a></li>
-                    <li><a href="#">Apps</a></li>
-                    <li><a href="#">Web Hosting</a></li>
-                    <li><a href="#">Pay Monthly Websites</a></li>
-                </ul>
-            </li>
-            
-            <li class="support-box drop-box nav-item">
-                <a class="support-btn drop-btn" href="#">
-                    <div class="icon"><i class="bi bi-display"></i></div>
-                    <div class="small">It</div>
-                    Support
-                </a>
-                <span class="back-bar support-bar"></span>
-                <ul class="support-menu drop-menu">
-                    <li><a href="#">Managed It</a></li>
-                    <li><a href="#">Business It</a></li>
-                    <li><a href="#">Office 365</a></li>
-                    <li><a href="#">Consultancy</a></li>
-                    <li><a href="#">Cloud Provider</a></li>
-                    <li><a href="#">Cyber Security</a></li>
-                </ul>
-            </li>
-            
-            <li class="telecoms-box drop-box nav-item">
-                <a class="telecoms-btn drop-btn" href="#">
-                    <div class="icon"><i class="fas fa-phone-alt"></i></div>
-                    <div class="small">Telecoms</div>
-                    Services
-                </a>
-                <span class="back-bar telecoms-bar"></span>
-                <ul class="telecoms-menu drop-menu">
-                    <li><a href="#">Gigabit Voucher</a></li>
-                    <li><a href="#">Hosted Voip</a></li>
-                    <li><a href="#">Business Voip</a></li>
-                    <li><a href="#">Business Broadband</a></li>
-                    <li><a href="#">Leased Line</a></li>
-                    <li><a href="#">3CX Systems</a></li>
-                </ul>
-            </li>
-            
-            <li class="software-box drop-box nav-item">
-                <a class="software-btn drop-btn" href="#">
-                    <div class="icon"><i class="fas fa-th"></i></div>
-                    <div class="small">Bespoke</div>
-                    Software
-                </a>
-                <span class="back-bar software-bar"></span>
-                <ul class="software-menu drop-menu">
-                    <li><a href="#">Workflow</a></li>
-                    <li><a href="#">Automation</a></li>
-                    <li><a href="#">Integration</a></li>
-                    <li><a href="#">Database</a></li>
-                    <li><a href="#">Sharepoint</a></li>
-                    <li><a href="#">Management</a></li>
-                    <li><a href="#">Navision</a></li>
-                </ul>
-            </li>
-            
-            <li class="marketing-box drop-box nav-item">
-                <a class="marketing-btn drop-btn" href="#">
-                    <div class="icon"><i class="bi bi-bar-chart-fill"></i></div>
-                    <div class="small">Digital</div>
-                    Marketing
-                </a>
-                <span class="back-bar marketing-bar"></span>
-                <ul class="marketing-menu drop-menu">
-                    <li><a href="#">Search (SEO)</a></li>
-                    <li><a href="#">Paid (PPC)</a></li>
-                    <li><a href="#">Conversion (CRO)</a></li>
-                    <li><a href="#">Email</a></li>
-                    <li><a href="#">Social Media</a></li>
-                    <li><a href="#">Content</a></li>
-                </ul>
-            </li>
-            
-            <li class="security-box drop-box nav-item">
-                <a class="security-btn drop-btn" href="#">
-                    <div class="icon"><i class="bi bi-shield-shaded"></i></div>
-                    <div class="small">Cyber</div>
-                    Security
-                </a>
-                <span class="back-bar security-bar"></span>
-                <ul class="security-menu drop-menu">
-                    <li><a href="#">Assessment</a></li>
-                    <li><a href="#">Management</a></li>
-                    <li><a href="#">Penetration Testing</a></li>
-                    <li><a href="#">Cyber Essentials</a></li>
-                    <li><a href="#">PCI/DSS</a></li>
-                    <li><a href="#">Hacker Prevention</a></li>
-                </ul>
-            </li>
-            
-        </ul>
-    </nav>
-
     <main>
         <!-- <section id="hero" class="text-white d-flex align-items-center">            
             <div class="container">
