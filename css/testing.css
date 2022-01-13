@@ -1,54 +1,30 @@
-/* Mobile Menu */
-.mobile-menu {
-    height: 100%;
-    /* width: 0; */
-    width: 275px;
-    position: fixed;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    background-color: #333645;
-    overflow: auto;
+/* Mobile Navigation Main Nav Section */
+.main-nav-mobile {
+    padding: 21px;
 }
-.mobile-menu ul {
-    border-top: 1px solid rgba(0, 0, 0, 0.25);
-    border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.main-nav-mobile ul {
+    margin: -20px 0 0;
 }
-.mobile-menu ul li {
-    border-top: 1px solid hsla(0, 0%, 100%, 0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+.main-nav-mobile > ul > li {
+    padding: 20px 0 0;
 }
-.mobile-menu ul li a {
+.main-nav-mobile ul li a {
+    font-size: 1.125rem;
+    padding: 19px 0 18px;
+    border-radius: 3px;
+    outline: 1px solid rgba(0, 0, 0, 0.25);
+    border: 1px solid hsla(0, 0%, 100%, 0.1);
     display: block;
-    color: #fff;
-    padding: 20px;
-    text-transform: uppercase;
-    font-size: 1rem;
-    text-decoration: none;
-    line-height: 1;
-    position: relative;
+    text-align: center;
 }
-.mobile-menu ul li ul li {
-    border-top: 1px solid rgba(0, 0, 0, 0.45);
+.main-nav-mobile ul li ul {
+    margin-top: 20px;
+    border-radius: 3px;
+    overflow: hidden;
 }
-.mobile-menu ul li ul li a {
-    border-top: 1px solid hsla(0, 0%, 100%, 0.5);
-    display: block;
-    background-color: rgba(0, 0, 0, 0.25);
-    padding: 15px 20px;
-    font-size: 0.875rem;
+.main-nav-mobile ul li ul a {
+    padding: 10px;
 }
-/* Media Queries */
-@media screen and (min-width: 992px) {
-    .mobile-menu {
-        width: 350px;
-    }
-}
-
-
 
 /* Sticky Header */
 /* .sticky {
