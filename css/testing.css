@@ -1,0 +1,15 @@
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header-bar {
+    background-color: white;
+}
