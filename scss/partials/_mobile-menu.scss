@@ -1,14 +1,13 @@
 /* Mobile Menu */
 .mobile-menu {
     height: 100%;
-    /* width: 0; */
-    width: 275px;
+    width: 0;
     position: fixed;
     z-index: 3;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: #333645;
-    overflow: auto;
+    overflow-y: scroll;
     ul {
         border-top: 1px solid rgba(0, 0, 0, 0.25);
         border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
@@ -39,12 +38,5 @@
                 }
             }
         }
-    }
-}
-
-/* Media Queries */
-@media screen and (min-width: 992px) {
-    .mobile-menu {
-        width: 350px;
     }
 }
