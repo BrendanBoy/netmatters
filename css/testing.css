@@ -1,23 +1,21 @@
-/* *************** */
-/* Overlay Attempt */
-/* *************** */
+/* ******* */
+/* Overlay */
+/* ******* */
 
-/* #body {
-    position: relative;
-}
-#mainContent::before {
-    display: var(--overlay, none);
-    content: "";
-    position: absolute;
-    z-index: var(--zed, 0);
-    background-color:#000;
-    opacity: var(--opaque, 0);
-    top:0;
-    right: 0;
-    width: 100%;
+.overlay {
     height: 100%;
-    transition: opacity 1s;
-} */
+    width: 0;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-y: auto;
+    overflow-x: hidden;
+    opacity: 0;
+    margin: 0;
+    transition: opacity 1s, margin 0.5s;
+}
 
 
 /* *********** */
@@ -65,8 +63,7 @@
 #mainContent {
     transition: all .5s;
 }
-.inactive,
-#mainContent::before {
+.inactive {
     margin-right: 275px;
     margin-left: -275px;
     overflow-y: scroll;
@@ -85,8 +82,7 @@
     .menu-active {
         width: 350px;
     }
-    .inactive,
-    #mainContent::before {
+    .inactive {
         margin-right: 350px;
         margin-left: -350px;
     }
