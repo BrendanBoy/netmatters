@@ -73,12 +73,7 @@
     margin-left: -275px;
     overflow-y: scroll;
 }
-/* Media Queries */
-/* @media screen and (min-width: 768px) {
-    body {
-        margin-bottom: -48px;
-    }
-} */
+
 @media screen and (min-width: 992px) {
     .main-nav-mobile {
         display: none;
@@ -96,11 +91,6 @@
 /* ************* */
 /* Sticky Header */
 /* ************* */
-/* .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-} */
 
 #header {
     position: sticky;
