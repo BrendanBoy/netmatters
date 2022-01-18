@@ -25,7 +25,7 @@
 
 /* Mobile Navigation Section */
 .mobile-menu {
-    transition: width .5s;
+    transition: width 0.5s;
 }
 .menu-active {
     width: 275px;
@@ -51,6 +51,10 @@
     display: block;
     text-align: center;
 }
+.mobile-menu > ul > li > a:hover,
+.main-nav-mobile > ul > li > a:hover {
+    background-color: hsla(0,0%,100%,.05);
+}
 .main-nav-mobile ul li ul {
     margin-top: 20px;
     border-radius: 3px;
@@ -62,7 +66,7 @@
 
 /* Main Page Content Section */
 #mainContent {
-    transition: all .5s;
+    transition: all 0.5s;
 }
 .inactive {
     margin-right: 275px;
@@ -102,7 +106,7 @@
     position: sticky;
     top: 0;
     z-index: 2;
-    transition: transform 0.4s;
+    transition: transform 0.5s;
 }
 
 .header-bar {
