@@ -30,6 +30,9 @@
     line-height: 1.5rem;
     font-weight: 600;
     margin-bottom: 15px;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   .news-#{$name} .card-label {
     background: $colour;

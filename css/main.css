@@ -132,6 +132,9 @@
   font-weight: 600;
   margin-bottom: 15px;
 }
+.news-design h3 a:hover, .news-design .h3 a:hover {
+  text-decoration: underline;
+}
 
 .news-design .card-label {
   background: #926fb1;
@@ -143,6 +146,9 @@
   line-height: 1.5rem;
   font-weight: 600;
   margin-bottom: 15px;
+}
+.news-support h3 a:hover, .news-support .h3 a:hover {
+  text-decoration: underline;
 }
 
 .news-support .card-label {
@@ -156,6 +162,9 @@
   font-weight: 600;
   margin-bottom: 15px;
 }
+.news-telecoms h3 a:hover, .news-telecoms .h3 a:hover {
+  text-decoration: underline;
+}
 
 .news-telecoms .card-label {
   background: #d64541;
@@ -167,6 +176,9 @@
   line-height: 1.5rem;
   font-weight: 600;
   margin-bottom: 15px;
+}
+.news-software h3 a:hover, .news-software .h3 a:hover {
+  text-decoration: underline;
 }
 
 .news-software .card-label {
@@ -180,6 +192,9 @@
   font-weight: 600;
   margin-bottom: 15px;
 }
+.news-marketing h3 a:hover, .news-marketing .h3 a:hover {
+  text-decoration: underline;
+}
 
 .news-marketing .card-label {
   background: #2ecc71;
@@ -191,6 +206,9 @@
   line-height: 1.5rem;
   font-weight: 600;
   margin-bottom: 15px;
+}
+.news-security h3 a:hover, .news-security .h3 a:hover {
+  text-decoration: underline;
 }
 
 .news-security .card-label {
@@ -11374,10 +11392,6 @@ small, .small {
 
 #service-cards .card:hover h2::after, #service-cards .card:hover .h2::after {
   background-color: white;
-}
-
-#news-cards .card-title:hover {
-  text-decoration: underline;
 }
 
 .top {
