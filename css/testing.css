@@ -105,6 +105,10 @@
 .mobile-menu {
     transition: width 0.5s;
 }
+.mobile-menu > ul > li > ul > li > a:before {
+    content: "\00bb";
+    padding-right: 20px;
+}
 .menu-active {
     width: 275px;
 }
@@ -129,10 +133,6 @@
     display: block;
     text-align: center;
 }
-/* .mobile-menu > ul > li > a:hover,
-.main-nav-mobile > ul > li > a:hover {
-    background-color: hsla(0,0%,100%,.05);
-} */
 .main-nav-mobile ul li ul {
     margin-top: 20px;
     border-radius: 3px;
