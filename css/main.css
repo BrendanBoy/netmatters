@@ -11294,6 +11294,7 @@ small, .small {
 .hamburger {
   font-size: 12px;
   line-height: 12px;
+  min-width: 72px;
 }
 
 .mobile-search {
