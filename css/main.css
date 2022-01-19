@@ -12002,4 +12002,17 @@ label {
 .security-bar {
     left: -990px;
   }
+}
+.btn:hover,
+.btn:focus {
+  color: white;
+}
+
+.btn:active:focus {
+  box-shadow: none;
+}
+
+.btn-light:hover,
+.btn-light:focus {
+  color: #333645;
 }/*# sourceMappingURL=main.css.map */

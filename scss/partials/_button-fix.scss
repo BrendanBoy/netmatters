@@ -1,0 +1,11 @@
+.btn:hover,
+.btn:focus {
+    color: white;
+}
+.btn:active:focus {
+    box-shadow: none;
+}
+.btn-light:hover,
+.btn-light:focus {
+    color: $altDark;
+}
