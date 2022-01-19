@@ -129,10 +129,10 @@
     display: block;
     text-align: center;
 }
-.mobile-menu > ul > li > a:hover,
+/* .mobile-menu > ul > li > a:hover,
 .main-nav-mobile > ul > li > a:hover {
     background-color: hsla(0,0%,100%,.05);
-}
+} */
 .main-nav-mobile ul li ul {
     margin-top: 20px;
     border-radius: 3px;

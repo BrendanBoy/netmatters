@@ -40,3 +40,12 @@
         }
     }
 }
+// Setting the Mobile Menu to hightlight the first or parent item of a list when any item from the sublist is hovered
+.mobile-menu,
+.main-nav-mobile {
+    & > ul > li:hover {
+        & > a {
+            background-color: hsla(0,0%,100%,.05);
+        }
+    } 
+}

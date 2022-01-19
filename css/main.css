@@ -11906,6 +11906,11 @@ footer a:hover {
   font-size: 0.875rem;
 }
 
+.mobile-menu > ul > li:hover > a,
+.main-nav-mobile > ul > li:hover > a {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
 legend {
   font-size: 32px;
 }
