@@ -171,7 +171,7 @@
 /* ************* */
 
 #header {
-    position: sticky;
+    position: static;
     top: 0;
     z-index: 2;
     transition: transform 0.5s;
@@ -186,5 +186,6 @@
 }
 
 .scroll-up {
-    transform: none;
+    
+    transform: translate3d(0, 0, 0);
 }
