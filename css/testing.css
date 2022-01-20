@@ -126,14 +126,13 @@
 
 /* Mobile Navigation Section */
 .mobile-menu {
-    transition: width 0.5s;
+    transition: margin 0.5s;
+    width: 275px;
+    margin-right: -275px;
 }
 .mobile-menu > ul > li > ul > li > a:before {
     content: "\00bb";
     padding-right: 20px;
-}
-.menu-active {
-    width: 275px;
 }
 
 /* Mobile Navigation Main Nav Subsection */
@@ -164,7 +163,11 @@
 .main-nav-mobile ul li ul a {
     padding: 10px;
 }
-
+/* This rule needs to be marked as important 
+or come after the media queries for this section */
+.menu-active {
+    margin-right: 0 !important; 
+}
 /* Main Page Content Section */
 #mainContent {
     transition: all 0.5s;
@@ -179,13 +182,13 @@
     .main-nav-mobile {
         display: none;
     }
-    .menu-active {
+    .mobile-menu {
         width: 350px;
+        margin-right: -350px;
+
     }
     .inactive {
         margin-right: 350px;
         margin-left: -350px;
     }
 }
-
-
