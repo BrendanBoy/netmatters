@@ -175,7 +175,7 @@ or come after the media queries for this section */
 .inactive {
     margin-right: 275px;
     margin-left: -275px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 @media screen and (min-width: 992px) {
