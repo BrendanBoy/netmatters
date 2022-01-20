@@ -1,3 +1,26 @@
+/* ************* */
+/* Sticky Header */
+/* ************* */
+
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    transition: transform 0.5s;
+}
+
+.header-bar {
+    background-color: white;
+}
+
+.scroll-down {
+    transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up {
+    transform: none;
+}
+
 /* ****** */
 /* pop-up */
 /* ****** */
@@ -166,26 +189,3 @@
 }
 
 
-/* ************* */
-/* Sticky Header */
-/* ************* */
-
-#header {
-    position: static;
-    top: 0;
-    z-index: 2;
-    transition: transform 0.5s;
-}
-
-.header-bar {
-    background-color: white;
-}
-
-.scroll-down {
-    transform: translate3d(0, -100%, 0);
-}
-
-.scroll-up {
-    
-    transform: translate3d(0, 0, 0);
-}
