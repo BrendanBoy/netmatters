@@ -24,7 +24,7 @@ window.addEventListener("scroll", () => {
 
     if (currentScroll <= 0) {
         header.classList.remove(scrollUp);
-        header.style.position = "static";
+        header.style.position = "relative";
         return;
     }
     if (currentScroll > headerHeight && currentScroll > lastScroll && !header.classList.contains(scrollDown)) {

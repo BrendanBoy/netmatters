@@ -1,4 +1,38 @@
-/* Navigation dots for the Banner Slider */
+#banner-slider {
+    border-top: 1px solid rgba(51, 54, 69, 0.5);
+}
+
+// Slider Formatting
+.my-slider > div {
+    height: calc(100vh - 168px);
+    min-height: 531px;
+    color: #fff;
+    text-align: center;
+    h1 {
+        font-size: 48px;
+    }
+    .lead {
+        line-height: 36px;
+        margin-bottom: 35px;
+    }
+}
+
+// Setting up the slides
+@each $name, $colour in ($service-colours) {
+    #slide-#{$name} {
+        position: relative;
+        @include picfix('../../img/carousel/#{$name}.jpeg');
+        background-image: linear-gradient(270deg,transparent 25%,#000), url('../../img/carousel/#{$name}.jpeg');
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+// Navigation dots for the Banner Slider
 .tns-outer {
     position: relative;
 }
@@ -33,65 +67,7 @@
     outline-offset: 5px;
 }
 
-/* Slide Formatting */
-.my-slider > div {
-    height: calc(100vh - 168px);
-    min-height: 531px;
-    color: #fff;
-    border-top: 1px solid white;
-    text-align: center;
-    h1 {
-        font-size: 48px;
-    }
-    .lead {
-        line-height: 36px;
-        margin-bottom: 35px;
-    }
-}
-
-/* Slide Images */
-// #slide-design {
-//     @include picfix('../../img/carousel/web-design.jpeg');
-//     background-image: linear-gradient(270deg,transparent 25%,#000), url('../../img/carousel/web-design.jpeg');
-// }
-// #slide-support {
-//     @include picfix('../../img/carousel/it-support.jpeg');
-//     background-image: linear-gradient(270deg,transparent 25%,#000), url('../../img/carousel/it-support.jpeg');
-
-// }
-// #slide-telecoms {
-//     @include picfix('../../img/carousel/telecoms-services.jpeg');
-//     background-image: linear-gradient(270deg,transparent 25%,#000), url('../../img/carousel/telecoms-services.jpeg');
-// }
-// #slide-software {
-//     @include picfix('../../img/carousel/bespoke-software.jpeg');
-//     background-image: linear-gradient(270deg,transparent 25%,#000), url('../../img/carousel/bespoke-software.jpeg');
-// }
-// #slide-marketing {
-//     @include picfix('../../img/carousel/digital-marketing.jpeg');
-//     background-image: linear-gradient(270deg,transparent 25%,#000), url('../../img/carousel/digital-marketing.jpeg');
-// }
-// #slide-security {
-//     @include picfix('../../img/carousel/cyber-security.jpeg');
-//     background-image: linear-gradient(270deg,transparent 25%,#000), url('../../img/carousel/cyber-security.jpeg');
-// }
-
-@each $name, $colour in ($service-colours) {
-    #slide-#{$name} {
-        position: relative;
-        @include picfix('../../img/carousel/#{$name}.jpeg');
-        background-image: linear-gradient(270deg,transparent 25%,#000), url('../../img/carousel/#{$name}.jpeg');
-        .container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-    }
-}
-
-
-/* Media Queries */
+// Media Queries
 @media screen and (min-width: 768px) {
     .my-slider > div {
         height: calc(100vh - 110px);
