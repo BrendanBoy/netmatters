@@ -1,0 +1,19 @@
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    transition: transform 0.5s;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.1);
+}
+
+.header-bar {
+    background-color: white;
+}
+
+.scroll-down {
+    transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up {
+    transform: none;
+}
