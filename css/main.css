@@ -11733,11 +11733,6 @@ footer a:hover {
 
 #slide-design {
   position: relative;
-  background-image: url("../../img/carousel/design.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: linear-gradient(270deg, transparent 25%, #000), url("../../img/carousel/design.jpeg");
 }
 #slide-design .container {
   position: absolute;
@@ -11748,11 +11743,6 @@ footer a:hover {
 
 #slide-support {
   position: relative;
-  background-image: url("../../img/carousel/support.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: linear-gradient(270deg, transparent 25%, #000), url("../../img/carousel/support.jpeg");
 }
 #slide-support .container {
   position: absolute;
@@ -11763,11 +11753,6 @@ footer a:hover {
 
 #slide-telecoms {
   position: relative;
-  background-image: url("../../img/carousel/telecoms.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: linear-gradient(270deg, transparent 25%, #000), url("../../img/carousel/telecoms.jpeg");
 }
 #slide-telecoms .container {
   position: absolute;
@@ -11778,11 +11763,6 @@ footer a:hover {
 
 #slide-software {
   position: relative;
-  background-image: url("../../img/carousel/software.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: linear-gradient(270deg, transparent 25%, #000), url("../../img/carousel/software.jpeg");
 }
 #slide-software .container {
   position: absolute;
@@ -11793,11 +11773,6 @@ footer a:hover {
 
 #slide-marketing {
   position: relative;
-  background-image: url("../../img/carousel/marketing.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: linear-gradient(270deg, transparent 25%, #000), url("../../img/carousel/marketing.jpeg");
 }
 #slide-marketing .container {
   position: absolute;
@@ -11808,11 +11783,6 @@ footer a:hover {
 
 #slide-security {
   position: relative;
-  background-image: url("../../img/carousel/security.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: linear-gradient(270deg, transparent 25%, #000), url("../../img/carousel/security.jpeg");
 }
 #slide-security .container {
   position: absolute;
