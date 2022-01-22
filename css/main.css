@@ -11731,6 +11731,11 @@ footer a:hover {
   margin-bottom: 35px;
 }
 
+.my-slider > div > img {
+  height: calc(100vh - 168px);
+  min-height: 531px;
+}
+
 #slide-design {
   position: relative;
 }
@@ -11828,13 +11833,15 @@ footer a:hover {
 }
 
 @media screen and (min-width: 768px) {
-  .my-slider > div {
+  .my-slider > div,
+.my-slider > div > img {
     height: calc(100vh - 110px);
     min-height: 589px;
   }
 }
 @media screen and (min-width: 992px) {
-  .my-slider > div {
+  .my-slider > div,
+.my-slider > div > img {
     height: calc(100vh - 209.02px);
     min-height: 489.98px;
   }
