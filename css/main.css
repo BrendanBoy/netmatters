@@ -11736,7 +11736,7 @@ footer a:hover {
   min-height: 531px;
   min-width: 100vw;
   display: block;
-  margin: 0 auto !important;
+  margin-left: calc((((100vh - 168px) * 2.581081081) - 100vw) / -2);
 }
 
 #slide-design {
@@ -11847,12 +11847,20 @@ footer a:hover {
     height: calc(100vh - 110px);
     min-height: 589px;
   }
+
+  .my-slider > div > img {
+    margin-left: calc((((100vh - 110px) * 2.581081081) - 100vw) / -2);
+  }
 }
 @media screen and (min-width: 992px) {
   .my-slider > div,
 .my-slider > div > img {
     height: calc(100vh - 209.02px);
     min-height: 489.98px;
+  }
+
+  .my-slider > div > img {
+    margin-left: calc((((100vh - 209.02px) * 2.581081081) - 100vw) / -2);
   }
 
   .my-slider > div .lead {
