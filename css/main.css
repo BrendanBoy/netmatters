@@ -11734,10 +11734,14 @@ footer a:hover {
 .my-slider > div > img {
   height: calc(100vh - 168px);
   min-height: 531px;
+  min-width: 100vw;
+  display: block;
+  margin: 0 auto !important;
 }
 
 #slide-design {
   position: relative;
+  overflow-x: hidden;
 }
 #slide-design .container {
   position: absolute;
@@ -11748,6 +11752,7 @@ footer a:hover {
 
 #slide-support {
   position: relative;
+  overflow-x: hidden;
 }
 #slide-support .container {
   position: absolute;
@@ -11758,6 +11763,7 @@ footer a:hover {
 
 #slide-telecoms {
   position: relative;
+  overflow-x: hidden;
 }
 #slide-telecoms .container {
   position: absolute;
@@ -11768,6 +11774,7 @@ footer a:hover {
 
 #slide-software {
   position: relative;
+  overflow-x: hidden;
 }
 #slide-software .container {
   position: absolute;
@@ -11778,6 +11785,7 @@ footer a:hover {
 
 #slide-marketing {
   position: relative;
+  overflow-x: hidden;
 }
 #slide-marketing .container {
   position: absolute;
@@ -11788,6 +11796,7 @@ footer a:hover {
 
 #slide-security {
   position: relative;
+  overflow-x: hidden;
 }
 #slide-security .container {
   position: absolute;

@@ -20,12 +20,16 @@
 .my-slider > div > img {
     height: calc(100vh - 168px);
     min-height: 531px;
+    min-width: 100vw;
+    display: block;
+    margin: 0 auto !important;
 }
 
 // Setting up the slides
 @each $name, $colour in ($service-colours) {
     #slide-#{$name} {
         position: relative;
+        overflow-x:hidden;
         // @include picfix('../../img/carousel/#{$name}.jpeg');
         // background-image: linear-gradient(270deg,transparent 25%,#000), url('../../img/carousel/#{$name}.jpeg');
         .container {
