@@ -11908,15 +11908,9 @@ footer a:hover {
   overflow-y: scroll;
 }
 .mobile-menu ul {
-  border-top: 1px solid rgba(0, 0, 0, 0.25);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   list-style: none;
   margin: 0;
   padding: 0;
-}
-.mobile-menu ul li {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 .mobile-menu ul li a {
   display: block;
@@ -11929,10 +11923,10 @@ footer a:hover {
   position: relative;
 }
 .mobile-menu ul li ul li {
-  border-top: 1px solid rgba(0, 0, 0, 0.45);
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .mobile-menu ul li ul li a {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
   display: block;
   background-color: rgba(0, 0, 0, 0.25);
   padding: 15px 20px;
