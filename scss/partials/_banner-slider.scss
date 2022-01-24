@@ -22,17 +22,32 @@
     min-height: 531px;
     min-width: 100vw;
     display: block;
-    margin-left: calc((((100vh - 168px) * 2.581081081) - 100vw) / -2);
+    // this is a mess!
+    margin-left: calc((1370.554054px - 100vw) / -2);
+    @media screen and (min-height: 699px) {
+        margin-left: calc((((100vh - 168px) * 2.581081081) - 100vw) / -2);
+    }
     @media screen and (min-width: 768px) {
         height: calc(100vh - 110px);
         min-height: 589px;
-        margin-left: calc((((100vh - 110px) * 2.581081081) - 100vw) / -2);
+        margin-left: calc((1520.256757px - 100vw) / -2);
+        @media screen and (min-height: 699px) {
+            margin-left: calc((((100vh - 110px) * 2.581081081) - 100vw) / -2);
+        }   
     }
     @media screen and (min-width: 992px) {
         height: calc(100vh - 209.02px);
         min-height: 489.98px;
-        margin-left: calc((((100vh - 209.02px) * 2.581081081) - 100vw) / -2);
+        margin-left: calc((1264.678108px - 100vw) / -2);
+        @media screen and (min-height: 699px) {
+            margin-left: calc((((100vh - 209.02px) * 2.581081081) - 100vw) / -2);            
+        }
     }
+    // @media screen and (min-width: 1260px) {
+    //     overflow: hidden;
+    //     width: 100vw;
+    //     margin: 0 auto;
+    // }
 }
 
 // Setting up the slides

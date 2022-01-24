@@ -11736,12 +11736,22 @@ footer a:hover {
   min-height: 531px;
   min-width: 100vw;
   display: block;
-  margin-left: calc((((100vh - 168px) * 2.581081081) - 100vw) / -2);
+  margin-left: calc((1370.554054px - 100vw) / -2);
+}
+@media screen and (min-height: 699px) {
+  .my-slider > div > img {
+    margin-left: calc((((100vh - 168px) * 2.581081081) - 100vw) / -2);
+  }
 }
 @media screen and (min-width: 768px) {
   .my-slider > div > img {
     height: calc(100vh - 110px);
     min-height: 589px;
+    margin-left: calc((1520.256757px - 100vw) / -2);
+  }
+}
+@media screen and (min-width: 768px) and (min-height: 699px) {
+  .my-slider > div > img {
     margin-left: calc((((100vh - 110px) * 2.581081081) - 100vw) / -2);
   }
 }
@@ -11749,6 +11759,11 @@ footer a:hover {
   .my-slider > div > img {
     height: calc(100vh - 209.02px);
     min-height: 489.98px;
+    margin-left: calc((1264.678108px - 100vw) / -2);
+  }
+}
+@media screen and (min-width: 992px) and (min-height: 699px) {
+  .my-slider > div > img {
     margin-left: calc((((100vh - 209.02px) * 2.581081081) - 100vw) / -2);
   }
 }
