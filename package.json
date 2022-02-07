@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/BrendanBoy/netmatters#readme",
   "dependencies": {
-    "bootstrap": "^5.1.3",
-    "tiny-slider": "^2.9.4"
+    "bootstrap": "^5.1.3"
   }
 }
