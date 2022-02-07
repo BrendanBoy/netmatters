@@ -11717,6 +11717,16 @@ footer a:hover {
   border-top: 1px solid rgba(51, 54, 69, 0.5);
 }
 
+.owl-carousel > div:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(270deg, transparent 25%, #000);
+}
+
 #slide-design {
   position: relative;
   overflow-x: hidden;
