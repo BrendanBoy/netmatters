@@ -11718,7 +11718,7 @@ footer a:hover {
 }
 
 .my-slider > div {
-  height: calc(100vh - 168px);
+  height: calc(100vh - 180px);
   min-height: 531px;
   color: #fff;
   text-align: center;
@@ -11732,50 +11732,40 @@ footer a:hover {
 }
 
 .my-slider > div > img {
-  height: calc(100vh - 168px);
-  min-height: 531px;
+  height: calc(100vh - 180px);
+  min-height: 519px;
   min-width: 100vw;
   display: block;
-  margin-left: calc((1370.554054px - 100vw) / -2);
+  margin-left: calc((1339.581081px - 100vw) / -2);
 }
 @media screen and (min-height: 699px) {
   .my-slider > div > img {
-    margin-left: calc((((100vh - 168px) * 2.581081081) - 100vw) / -2);
+    margin-left: calc((((100vh - 180px) * 2.581081081) - 100vw) / -2);
   }
 }
 @media screen and (min-width: 768px) {
   .my-slider > div > img {
-    height: calc(100vh - 110px);
-    min-height: 589px;
-    margin-left: calc((1520.256757px - 100vw) / -2);
+    height: calc(100vh - 104px);
+    min-height: 595px;
+    margin-left: calc((1535.743243px - 100vw) / -2);
   }
 }
 @media screen and (min-width: 768px) and (min-height: 699px) {
   .my-slider > div > img {
-    margin-left: calc((((100vh - 110px) * 2.581081081) - 100vw) / -2);
+    margin-left: calc((((100vh - 104px) * 2.581081081) - 100vw) / -2);
   }
 }
 @media screen and (min-width: 992px) {
   .my-slider > div > img {
-    height: calc(100vh - 209.02px);
-    min-height: 489.98px;
-    margin-left: calc((1264.678108px - 100vw) / -2);
+    height: calc(100vh - 224px);
+    min-height: 475px;
+    margin-left: calc((1226.013514px - 100vw) / -2);
   }
 }
 @media screen and (min-width: 992px) and (min-height: 699px) {
   .my-slider > div > img {
-    margin-left: calc((((100vh - 209.02px) * 2.581081081) - 100vw) / -2);
+    margin-left: calc((((100vh - 224px) * 2.581081081) - 100vw) / -2);
   }
-}
-
-.tns-slide-active:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: linear-gradient(270deg, transparent 25%, #000);
 }
 
 #slide-design {
@@ -11882,18 +11872,24 @@ footer a:hover {
 
 @media screen and (min-width: 768px) {
   .my-slider > div {
-    height: calc(100vh - 110px);
-    min-height: 589px;
+    height: calc(100vh - 104px);
+    min-height: 595px;
   }
 }
 @media screen and (min-width: 992px) {
   .my-slider > div {
-    height: calc(100vh - 209.02px);
-    min-height: 489.98px;
+    height: calc(100vh - 224px);
+    min-height: 475px;
   }
 
   .my-slider > div .lead {
     text-align: left;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .my-slider > div {
+    height: calc(100vh - 219px);
+    min-height: 480px;
   }
 }
 /* Mobile Menu */
