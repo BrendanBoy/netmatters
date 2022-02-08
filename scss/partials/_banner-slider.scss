@@ -3,7 +3,7 @@
 }
 
 // Gradient overlay
-.owl-carousel > div:before {
+.owl-item > div:before {
     content: "";
     position: absolute;
     left: 0;
