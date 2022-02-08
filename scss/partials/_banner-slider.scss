@@ -2,9 +2,34 @@
     border-top: 1px solid rgba(51, 54, 69, 0.5);
 }
 
+@each $name, $colour in ($service-colours) {
+    #slide-#{$name} {
+        position: relative;
+        @include picfix('../../img/carousel/#{$name}.jpeg');
+    }
+}
+
 .slide {
     position: relative;
     overflow-x:hidden;
+    min-height: 533px;
+    height: calc(100vh - 166px);
+    @media screen and (min-width: 576px) {
+        min-height: 519px;
+        height: calc(100vh - 180px);
+    }
+    @media screen and (min-width: 768px) {
+        min-height: 595px;
+        height: calc(100vh - 104px);
+    }
+    @media screen and (min-width: 992px) {
+        min-height: 474.86px;
+        height: calc(100vh - 224.14px);
+    }
+    @media screen and (min-width: 1260px) {
+        min-height: 479.17px;
+        height: calc(100vh - 219.83px);
+    }
     &:before {
         content: "";
         position: absolute;
@@ -21,6 +46,13 @@
         transform: translate(-50%, -50%);
         color: #fff;
         text-align: center;
+        h1 {
+            font-size: 48px;
+        }
+        .lead {
+            line-height: 38px;
+            margin-bottom: 35px;
+        }
         @media screen and(min-width: 992px) {
             .lead {
                 text-align: left;

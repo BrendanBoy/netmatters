@@ -51,30 +51,6 @@
   background: #FFF;
 }
 
-.owl-carousel .owl-item img {
-  width: auto;
-  height: calc(100vh - 166px);
-  min-height: 533px;
-}
-@media screen and (min-width: 576px) {
-  .owl-carousel .owl-item img {
-    height: calc(100vh - 180px);
-    min-height: 519px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .owl-carousel .owl-item img {
-    height: calc(100vh - 104px);
-    min-height: 595px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .owl-carousel .owl-item img {
-    height: calc(100vh - 224.14px);
-    min-height: 474.86px;
-  }
-}
-
 .owl-theme .owl-dots {
   position: absolute;
   display: flex;

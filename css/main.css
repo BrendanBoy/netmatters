@@ -11717,9 +11717,83 @@ footer a:hover {
   border-top: 1px solid rgba(51, 54, 69, 0.5);
 }
 
+#slide-design {
+  position: relative;
+  background-image: url("../../img/carousel/design.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#slide-support {
+  position: relative;
+  background-image: url("../../img/carousel/support.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#slide-telecoms {
+  position: relative;
+  background-image: url("../../img/carousel/telecoms.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#slide-software {
+  position: relative;
+  background-image: url("../../img/carousel/software.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#slide-marketing {
+  position: relative;
+  background-image: url("../../img/carousel/marketing.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#slide-security {
+  position: relative;
+  background-image: url("../../img/carousel/security.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .slide {
   position: relative;
   overflow-x: hidden;
+  min-height: 533px;
+  height: calc(100vh - 166px);
+}
+@media screen and (min-width: 576px) {
+  .slide {
+    min-height: 519px;
+    height: calc(100vh - 180px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .slide {
+    min-height: 595px;
+    height: calc(100vh - 104px);
+  }
+}
+@media screen and (min-width: 992px) {
+  .slide {
+    min-height: 474.86px;
+    height: calc(100vh - 224.14px);
+  }
+}
+@media screen and (min-width: 1260px) {
+  .slide {
+    min-height: 479.17px;
+    height: calc(100vh - 219.83px);
+  }
 }
 .slide:before {
   content: "";
@@ -11737,6 +11811,13 @@ footer a:hover {
   transform: translate(-50%, -50%);
   color: #fff;
   text-align: center;
+}
+.slide .container h1, .slide .container .h1 {
+  font-size: 48px;
+}
+.slide .container .lead {
+  line-height: 38px;
+  margin-bottom: 35px;
 }
 @media screen and (min-width: 992px) {
   .slide .container .lead {
