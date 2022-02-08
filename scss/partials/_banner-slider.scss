@@ -2,29 +2,29 @@
     border-top: 1px solid rgba(51, 54, 69, 0.5);
 }
 
-// Gradient overlay
-.owl-item > div:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: linear-gradient(270deg, transparent 25%, #000);
-}
-
-// Setting up the slides
-@each $name, $colour in ($service-colours) {
-    #slide-#{$name} {
-        position: relative;
-        overflow-x:hidden;
-        // @include picfix('../../img/carousel/#{$name}.jpeg');
-        // background-image: linear-gradient(270deg,transparent 25%,#000), url('../../img/carousel/#{$name}.jpeg');
-        .container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+.slide {
+    position: relative;
+    overflow-x:hidden;
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(270deg, transparent 25%, #000);
+    }
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-align: center;
+        @media screen and(min-width: 992px) {
+            .lead {
+                text-align: left;
+            }
         }
     }
 }

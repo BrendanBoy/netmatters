@@ -11717,7 +11717,11 @@ footer a:hover {
   border-top: 1px solid rgba(51, 54, 69, 0.5);
 }
 
-.owl-item > div:before {
+.slide {
+  position: relative;
+  overflow-x: hidden;
+}
+.slide:before {
   content: "";
   position: absolute;
   left: 0;
@@ -11726,71 +11730,18 @@ footer a:hover {
   bottom: 0;
   background: linear-gradient(270deg, transparent 25%, #000);
 }
-
-#slide-design {
-  position: relative;
-  overflow-x: hidden;
-}
-#slide-design .container {
+.slide .container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
 }
-
-#slide-support {
-  position: relative;
-  overflow-x: hidden;
-}
-#slide-support .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#slide-telecoms {
-  position: relative;
-  overflow-x: hidden;
-}
-#slide-telecoms .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#slide-software {
-  position: relative;
-  overflow-x: hidden;
-}
-#slide-software .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#slide-marketing {
-  position: relative;
-  overflow-x: hidden;
-}
-#slide-marketing .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#slide-security {
-  position: relative;
-  overflow-x: hidden;
-}
-#slide-security .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+@media screen and (min-width: 992px) {
+  .slide .container .lead {
+    text-align: left;
+  }
 }
 
 /* Mobile Menu */
