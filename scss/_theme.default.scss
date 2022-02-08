@@ -27,4 +27,9 @@ $dot-margin: 			5px 7px !default;
 $dot-background:		$color-gray !default;
 $dot-background-active:	$color-base !default;
 
+$dot-width:             11px;
+$dot-height:            11px;
+$dot-background-active: $color-white;
+$dot-margin:            0 10px;
+
 @import 'theme';
