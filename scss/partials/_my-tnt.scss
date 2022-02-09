@@ -90,9 +90,11 @@
     transition: all 0.25s;
   }
   &:hover {
-    .card-img-top {
-      opacity: 0.7;
-      transform: scale(1.1);
+    @media screen and (min-width: 992px) {
+      .card-img-top {
+        opacity: 0.7;
+        transform: scale(1.1);
+      }
     }
   }
 }
