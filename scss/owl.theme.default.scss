@@ -1,30 +1,4 @@
-@import "theme.default";
-
-// .owl-carousel .owl-item img {
-//     width: auto;
-//     height: auto;
-//     min-width: 100vw;
-//     height: calc(100vh - 166px);
-//     min-height: 533px;
-//     @media screen and (min-width: 576px) {
-//         height: calc(100vh - 180px);
-//         min-height: 519px;
-//     }
-//     @media screen and (min-width: 768px) {
-//         height: calc(100vh - 104px);
-//         min-height: 595px;
-//     }
-//     @media screen and (min-width: 992px) {
-//         height: calc(100vh - 224.14px);
-//         min-height: 474.86px;
-//     }
-//     @media screen and (min-width: 1200px) {
-//         height: auto;
-        
-//     }
-// }
-
-
+@import "partials/owlcarousel/theme.default";
 
 .owl-theme .owl-dots {
     position: absolute;
@@ -49,5 +23,3 @@
         outline-offset: 5px;
     }
 }
-
-
