@@ -5,7 +5,7 @@
 @each $name, $colour in ($service-colours) {
     #slide-#{$name} {
         position: relative;
-        @include picfix('../../img/carousel/#{$name}.jpeg');
+        @include picfix('../img/carousel/#{$name}.jpeg');
     }
 }
 

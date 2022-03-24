@@ -11721,7 +11721,7 @@ footer a:hover {
 
 #slide-design {
   position: relative;
-  background-image: url("../../img/carousel/design.jpeg");
+  background-image: url("../img/carousel/design.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11729,7 +11729,7 @@ footer a:hover {
 
 #slide-support {
   position: relative;
-  background-image: url("../../img/carousel/support.jpeg");
+  background-image: url("../img/carousel/support.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11737,7 +11737,7 @@ footer a:hover {
 
 #slide-telecoms {
   position: relative;
-  background-image: url("../../img/carousel/telecoms.jpeg");
+  background-image: url("../img/carousel/telecoms.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11745,7 +11745,7 @@ footer a:hover {
 
 #slide-software {
   position: relative;
-  background-image: url("../../img/carousel/software.jpeg");
+  background-image: url("../img/carousel/software.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11753,7 +11753,7 @@ footer a:hover {
 
 #slide-marketing {
   position: relative;
-  background-image: url("../../img/carousel/marketing.jpeg");
+  background-image: url("../img/carousel/marketing.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11761,7 +11761,7 @@ footer a:hover {
 
 #slide-security {
   position: relative;
-  background-image: url("../../img/carousel/security.jpeg");
+  background-image: url("../img/carousel/security.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
