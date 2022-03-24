@@ -335,19 +335,6 @@
             </nav>
         </header>
         <main>
-            <!-- <section id="hero" class="text-white d-flex align-items-center">            
-                <div class="container">
-                    <div class="d-flex flex-column align-items-center align-items-lg-start">
-                        <h1>Web Design</h1>
-                        <p class="lead">For businesses looking to make a strong<br>
-                            and effective first impression.</p>
-                        <a class="btn btn-hero btn-design" href="#">
-                            Find Out More 
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </section> -->
             <section id="banner-slider">
                 <div class="owl-carousel owl-theme">
                     <div id="slide-design" class="slide">
