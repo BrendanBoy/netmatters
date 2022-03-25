@@ -23,7 +23,7 @@
         <div class="main-nav-mobile">
             <ul>
                 <li>
-                    <a href="#">Contact Us</a>
+                    <a href="contact-us.php">Contact Us</a>
                 </li>
                 <li>
                     <a class="drop-btn design-btn" href="#">
@@ -161,7 +161,7 @@
                 <a href="#">Covid Risk Assesments</a>
             </li>
             <li>
-                <a href="#">Contact Us</a>
+                <a href="contact-us.php">Contact Us</a>
                 <ul>
                     <li><a href="#">Cambridge Office</a></li>
                     <li><a href="#">Wymondham Office</a></li>
@@ -180,7 +180,7 @@
                 <div class="container py-4">
                     <div class="top">
                         <div class="net-logo">
-                            <a href="#">
+                            <a href="./">
                                 <img class="img-fluid" src="img/f-logo.png" alt="Netmatters logo">
                             </a>
                         </div>
@@ -194,7 +194,7 @@
                                     Support
                                 </div>
                             </a>
-                            <a href="#" class="btn btn-top btn-altLight d-none d-lg-block">
+                            <a href="contact-us.php" class="btn btn-top btn-altLight d-none d-lg-block">
                                 <div class="btn-inner">
                                     <i class="fas fa-paper-plane"></i>
                                     Contact
