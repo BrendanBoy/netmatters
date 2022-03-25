@@ -1,4 +1,6 @@
-<?php include("inc/header.php"); ?>
+<?php
+$pageTitle = "Netmatters | Full Service Digital Agency | Cambridgeshire &amp; Norfolk | Netmatters";
+include("inc/header.php"); ?>
             <section id="banner-slider">
                 <div class="owl-carousel owl-theme">
                     <div id="slide-design" class="slide">
