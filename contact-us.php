@@ -30,8 +30,30 @@ include("inc/header.php"); ?>
                     </div>
                 </div>
             </section>
-            <section id="contact-form">
-                <form action="" method="post"></form>
+            <section id="contact">
+                <div class="container">
+                <form id="contact-form" action="contact-us.php" method="post">
+                    <label for="contactName">Your Name <span class="asterisk">*</span></label>
+                    <input class="form-control" type="text" name="contactName" id="contactName">
+                    <label for="contactCompany">Company Name</label>
+                    <input class="form-control" type="text" name="contactCompany" id="contactCompany">
+                    <label for="contactEmail">Your Email <span class="asterisk">*</span></label>
+                    <input class="form-control" type="email" name="contactEmail" id="contactEmail">
+                    <label for="contactTelephone">Your Telephone Number <span class="asterisk">*</span></label>
+                    <input class="form-control" type="tel" name="contactTelephone" id="contactTelephone">
+                    <label for="contactSubject">Subject <span class="asterisk">*</span></label>
+                    <input class="form-control" type="text" name="contactSubject" id="contactSubject">
+                    <label for="contactMessage">Message <span class="asterisk">*</span></label>
+                    <input class="form-control" type="text" name="contactMessage" id="contactMessage">
+                    <div class="form-check ms-2 mb-3">
+                                <input type="checkbox" class="form-check-input" value="" id="marketing">
+                                <label for="marketing" class="form-check-label">Please tick this box if you want to receive
+                                    marketing information from us. Please see our <a href="#">Privacy Policy</a> for more
+                                    information on how we use your data.</label>
+                            </div>
+                            <button type="submit" class="btn btn-design">Subscribe</button>
+                </form>
+                </div>
             </section>
 
 <?php include("inc/footer.php"); ?>

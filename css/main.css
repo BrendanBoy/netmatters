@@ -11987,9 +11987,11 @@ label {
   color: #d24d57;
 }
 
-#newsletter .form-control {
+#newsletter .form-control,
+#contact-form .form-control {
   height: 47px;
   border-radius: 2px;
+  margin-bottom: 10px;
 }
 
 .form-control:focus {
@@ -12019,6 +12021,19 @@ label {
 .form-check-input:focus {
   box-shadow: none;
   border-color: #333645;
+}
+
+#contact-form {
+  background: #e6e7e9;
+  padding: 30px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+#contact-form a {
+  text-decoration: underline;
+}
+#contact-form a:hover {
+  color: #121419;
 }
 
 @media screen and (min-width: 576px) {

@@ -1,0 +1,12 @@
+#contact-form {
+    background: #e6e7e9;
+    padding: 30px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    a {
+        text-decoration: underline;
+        &:hover {
+            color: #121419;
+        }
+    }
+  }

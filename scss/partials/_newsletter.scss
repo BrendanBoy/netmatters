@@ -11,9 +11,11 @@ label {
     color: #d24d57;
 }
 
-#newsletter .form-control {
+#newsletter .form-control,
+#contact-form .form-control {
     height: 47px;
     border-radius: 2px;
+    margin-bottom: 10px;
 }
 
 .form-control:focus {
