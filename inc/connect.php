@@ -1,0 +1,13 @@
+<?php
+
+try {
+    $db = new PDO("mysql:host=localhost;port=3306;dbname=news", "brendan", "test1234");
+    $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+    // var_dump($db);
+} catch (Exception $e) {
+    echo "Unable to connect<br>\n";
+    echo $e->getMessage();
+    exit;
+}
+
+?>
