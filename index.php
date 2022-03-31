@@ -1,6 +1,10 @@
+<!-- start of main file -->
+
 <?php
 $pageTitle = "Netmatters | Full Service Digital Agency | Cambridgeshire &amp; Norfolk | Netmatters";
 include("inc/header.php"); ?>
+
+        <!-- start of main content -->
             <section id="banner-slider">
                 <div class="owl-carousel owl-theme">
                     <div id="slide-design" class="slide">
@@ -271,4 +275,6 @@ include("inc/header.php"); ?>
                     </div>
                 </div>
             </section>
+            <!-- end of main content -->
+            
             <?php include("inc/footer.php"); ?>

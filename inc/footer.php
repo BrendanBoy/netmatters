@@ -1,3 +1,4 @@
+<!-- start of footer -->
         </main>
             <section id="newsletter">
                 <h2 class="sr-only">Newsletter</h2>
@@ -187,3 +188,4 @@
     <script src="js/pop-up.js"></script>
 </body>
 </html>
+<!-- end of footer -->

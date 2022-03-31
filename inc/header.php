@@ -1,3 +1,4 @@
+<!-- start of header -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -335,3 +336,5 @@
             </nav>
         </header>
         <main>
+        <!-- end of header -->
+        

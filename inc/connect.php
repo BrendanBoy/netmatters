@@ -1,7 +1,6 @@
 <?php
 
 try {
-    // $db = new PDO("mysql:host=localhost;port=3306;dbname=news", "brendan", "test1234");
     $db = new PDO("mysql:host=localhost;port=3306;dbname=brendanb_news", "brendanb_bnadnerb", "=[A8Oqc@jriX");
     $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     // var_dump($db);
