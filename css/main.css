@@ -11311,7 +11311,7 @@ small, .small {
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   margin-top: 15px;
-  outline: 1px solid rgba(255, 255, 255, 0.2);
+  outline: 1px solid hsla(0deg, 0%, 100%, 0.2);
   color: #555;
   background: rgba(0, 0, 0, 0.1);
   font-size: 14px;
@@ -11519,14 +11519,14 @@ footer a:hover {
 
 /* Adding the outside border */
 .drop {
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid hsla(0deg, 0%, 100%, 0.1);
 }
 
 /* The container for positioning the dropdown */
 .drop-box {
   position: relative;
   padding: 19px 0 18px;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid hsla(0deg, 0%, 100%, 0.1);
   border-left: 1px solid rgba(0, 0, 0, 0.25);
 }
 
@@ -11855,7 +11855,7 @@ footer a:hover {
 }
 .mobile-menu ul li ul li {
   border-top: 1px solid rgba(0, 0, 0, 0.25);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid hsla(0deg, 0%, 100%, 0.1);
 }
 .mobile-menu ul li ul li a {
   display: block;
@@ -11866,7 +11866,7 @@ footer a:hover {
 
 .mobile-menu > ul > li:hover > a,
 .main-nav-mobile > ul > li:hover > a {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: hsla(0deg, 0%, 100%, 0.05);
 }
 
 #header {
@@ -11975,6 +11975,12 @@ footer a:hover {
     width: 600px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1260px) {
+  .article:last-child {
+    display: none;
+  }
+}
+
 legend {
   font-size: 32px;
 }
