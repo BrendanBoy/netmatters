@@ -1,5 +1,8 @@
 #banner-slider {
     border-top: 1px solid rgba(51, 54, 69, 0.5);
+    h1 {
+        text-transform: uppercase;
+    }
 }
 
 @each $name, $colour in ($service-colours) {

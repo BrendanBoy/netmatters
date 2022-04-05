@@ -10,9 +10,27 @@
     }
 }
 
-#office-cards h1 {
+#page-title {
     background-color: $altDark;
     color: white;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-bottom: 30px;
+    h1 {
+        margin: 0;
+    }
+}
+
+.office-card {
+    color: $addr;
+    .card-title {
+        color: $altDark;
+        font-size: 18px;
+    }
+}
+
+#contact-details {
+    color: $addr;
 }
 
 #contact-form {
@@ -26,4 +44,14 @@
             color: #121419;
         }
     }
+}
+
+.emphasis {
+    font-size: 26px;
+    font-weight: 600;
+    color: $design;
+}
+
+.tel {
+    font-weight: 700;
 }
