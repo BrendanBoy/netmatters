@@ -41,6 +41,7 @@ include("inc/header.php"); ?>
                                         <a class="card-link btn btn-design" href="#">View More</a>
                                     </span>
                                 </div>
+                                <div id="map1" class="maps"></div>
                             </div>
                         </div>
 
@@ -65,6 +66,7 @@ include("inc/header.php"); ?>
                                         <a class="card-link btn btn-design" href="#">View More</a>
                                     </span>
                                 </div>
+                                <div id="map2" class="maps"></div>
                             </div>
                         </div>
 
@@ -89,6 +91,7 @@ include("inc/header.php"); ?>
                                         <a class="card-link btn btn-design" href="#">View More</a>
                                     </span>
                                 </div>
+                                <div id="map3" class="maps"></div>
                             </div>
                         </div>
                         
