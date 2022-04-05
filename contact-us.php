@@ -5,14 +5,92 @@ include("inc/header.php"); ?>
 
             <section id="breadcrumb">
                 <div class="container">
-                Home / Our Offices
+                <a href="./"><strong>Home</strong></a> / Our Offices
                 </div>
             </section>
-            <section id="office-addresses">
+
+            <section id="office-cards" class="py-4" style="box-shadow: inset 0 5px 35px rgba(0,0,0,0.1);">
+            <h1>Our Offices</h1>
                 <div class="container">
-                <h1>Our Offices</h1>
+                    
+                    <div class="row mb-4">
+
+                        <div class="col-lg-4 pt-4">
+                            <div class="office-card card h-100">
+                                <div class="image-container">
+                                    <a href="#"><img src="img/offices/cambridge.jpg" class="card-img-top" alt=""></a>
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">
+                                        <a href="#">Cambridge Office</a>
+                                    </h3>
+                                    <address class="card-text">
+                                        Unit 1.28,<br>
+                                        St John's Innovation Centre,<br>
+                                        Cowley Road,<br>
+                                        Cambridge,<br>
+                                        CB4 0WS<br>
+                                    </address>
+                                    <span class="tel"><a href="#">01223 37 57 72</a></span>
+                                    <span class="mt-auto">
+                                        <a class="card-link btn btn-design" href="#">View More</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 pt-4">
+                            <div class="office-card card h-100">
+                                <div class="image-container">
+                                    <a href="#"><img src="img/offices/wymondham.jpg" class="card-img-top" alt=""></a>
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">
+                                        <a href="#">Wymondham Office</a>
+                                    </h3>
+                                    <address class="card-text">
+                                        Unit 15,<br>
+                                        Penfold Drive,<br>
+                                        Gateway 11 Business Park,<br>
+                                        Wymondham, Norfolk,<br>
+                                        NR18 0WZ<br>
+                                    </address>
+                                    <span class="tel"><a href="#">01603 70 40 20</a></span>
+                                    <span class="mt-auto">
+                                        <a class="card-link btn btn-design" href="#">View More</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 pt-4">
+                            <div class="office-card card h-100">
+                                <div class="image-container">
+                                    <a href="#"><img src="img/offices/yarmouth-2.jpg" class="card-img-top" alt=""></a>
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <h3 class="card-title">
+                                        <a href="#">Great Yarmouth Office</a>
+                                    </h3>
+                                    <address class="card-text">
+                                        Suite F23,<br>
+                                        Beacon Innovation Centre,<br>
+                                        Beacon Park, Gorleston,<br>
+                                        Great Yarmouth,m Norfolk,<br>
+                                        NR31 7RA<br>
+                                    </address>
+                                    <span class="tel"><a href="#">01493 60 32 04</a></span>
+                                    <span class="mt-auto">
+                                        <a class="card-link btn btn-design" href="#">View More</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
             </section>
+
             <section id="contact-details">
                 <div class="container">
                     <div>
@@ -51,7 +129,7 @@ include("inc/header.php"); ?>
                                     marketing information from us. Please see our <a href="#">Privacy Policy</a> for more
                                     information on how we use your data.</label>
                             </div>
-                            <button type="submit" class="btn btn-design">Subscribe</button>
+                            <button type="submit" class="btn btn-design">Send Enquiry</button>
                 </form>
                 </div>
             </section>
