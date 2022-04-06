@@ -106,7 +106,7 @@ include("inc/header.php"); ?>
                     <p class="emphasis"><a href="#">sales@netmatters.com</a></p>
                     <p><strong>Business hours:</strong></p>
                     <p><strong>Monday - Friday 07:00 - 18:00</strong></p>
-                    <p><strong>Out of Hours IT Support</strong></p>
+                    <a href="#"><p><strong>Out of Hours IT Support <i class="fas fa-chevron-down"></strong></i></p></a>
                     </div>
                     <div>
                         <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks</p>
