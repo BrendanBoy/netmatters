@@ -11250,7 +11250,8 @@ p {
   font-size: 1rem;
 }
 
-a {
+a,
+a:hover {
   text-decoration: none;
   color: inherit;
 }
@@ -11898,7 +11899,7 @@ footer a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 3;
+  z-index: 1003;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -12031,6 +12032,10 @@ label {
   border-color: #333645;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 #breadcrumb {
   display: none;
   border-top: 1px solid #333645;
@@ -12063,6 +12068,13 @@ label {
   color: #333645;
   font-size: 18px;
 }
+.office-card .card-title:hover {
+  color: #121419;
+}
+.office-card .btn {
+  font-size: 14px;
+  padding: 5px 30px;
+}
 
 #contact-details {
   color: #666;
@@ -12089,6 +12101,7 @@ label {
 
 .tel {
   font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .maps {
@@ -12163,6 +12176,7 @@ label {
 .btn:hover,
 .btn:focus {
   color: white;
+  text-decoration: none;
 }
 
 .btn:active:focus {

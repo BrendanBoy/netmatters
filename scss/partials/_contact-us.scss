@@ -1,3 +1,7 @@
+a:hover {
+    text-decoration: underline;
+}
+
 #breadcrumb {
     display: none;
     border-top: 1px solid $altDark;
@@ -26,6 +30,13 @@
     .card-title {
         color: $altDark;
         font-size: 18px;
+        &:hover {
+            color: #121419;
+        }
+    }
+    .btn {
+        font-size: 14px;
+        padding: 5px 30px;
     }
 }
 
@@ -54,4 +65,5 @@
 
 .tel {
     font-weight: 700;
+    margin-bottom: 15px;
 }

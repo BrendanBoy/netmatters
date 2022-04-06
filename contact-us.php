@@ -103,7 +103,7 @@ include("inc/header.php"); ?>
                 <div class="container">
                     <div>
                     <p><strong>Email us on:</strong></p>
-                    <p class="emphasis">sales@netmatters.com</p>
+                    <p class="emphasis"><a href="#">sales@netmatters.com</a></p>
                     <p><strong>Business hours:</strong></p>
                     <p><strong>Monday - Friday 07:00 - 18:00</strong></p>
                     <p><strong>Out of Hours IT Support</strong></p>
