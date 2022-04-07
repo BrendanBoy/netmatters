@@ -12032,7 +12032,7 @@ label {
   border-color: #333645;
 }
 
-a:hover {
+main a:hover {
   text-decoration: underline;
 }
 
@@ -12078,6 +12078,10 @@ a:hover {
 
 #contact-details {
   color: #666;
+}
+
+#out-of-hours {
+  display: none;
 }
 
 #contact-form {
