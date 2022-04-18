@@ -12020,7 +12020,7 @@ label {
   width: 32px;
   border-radius: 4px;
   border: 3px solid #333645;
-  background-color: #ddd;
+  background-color: transparent;
   margin-left: -56px;
 }
 .form-check-input:checked {
