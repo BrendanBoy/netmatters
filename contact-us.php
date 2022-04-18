@@ -1,6 +1,37 @@
 <?php
+require("inc/functions.php");
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $your_name = trim(filter_input(INPUT_POST, 'your_name', FILTER_SANITIZE_STRING));
+    $company_name = trim(filter_input(INPUT_POST, 'company_name', FILTER_SANITIZE_STRING));
+    $email = trim(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING));
+    $telephone = trim(filter_input(INPUT_POST, 'telephone', FILTER_SANITIZE_STRING));
+    $subject = trim(filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_STRING));
+    $message = trim(filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING));
+
+    $error_message = [];
+    if (empty($your_name)) {
+        $error_message[] = "The name field is required.";
+    }
+    if (empty($telephone)) {
+        $error_message[] = "The telephone field is required.";
+    }
+    if (empty($email)) {
+        $error_message[] = "The email field is required.";
+    }
+    if (empty($subject)) {
+        $error_message[] = "The subject field is required.";
+    }
+    if (empty($message)) {
+        $error_message[] = "The message field is required.";
+    }
+}
+
 $pageTitle = "Contact Us | Netmatters";
-include("inc/header.php"); ?>
+
+include("inc/header.php");
+
+?>
 
 
             <section id="breadcrumb">
@@ -119,25 +150,32 @@ include("inc/header.php"); ?>
             <section id="contact">
                 <div class="container">
                 <form id="contact-form" action="contact-us.php" method="post">
+                    <div class="error-messages">
+                        <?php
+                        if (!empty($error_message)) {
+                            var_dump($error_message);
+                        }
+                        ?>
+                    </div>
                     <label for="contactName">Your Name <span class="asterisk">*</span></label>
-                    <input class="form-control" type="text" name="contactName" id="contactName">
+                    <input class="form-control" type="text" name="your_name" id="contactName">
                     <label for="contactCompany">Company Name</label>
-                    <input class="form-control" type="text" name="contactCompany" id="contactCompany">
+                    <input class="form-control" type="text" name="company_name" id="contactCompany">
                     <label for="contactEmail">Your Email <span class="asterisk">*</span></label>
-                    <input class="form-control" type="email" name="contactEmail" id="contactEmail">
+                    <input class="form-control" type="email" name="email" id="contactEmail">
                     <label for="contactTelephone">Your Telephone Number <span class="asterisk">*</span></label>
-                    <input class="form-control" type="tel" name="contactTelephone" id="contactTelephone">
+                    <input class="form-control" type="tel" name="telephone" id="contactTelephone">
                     <label for="contactSubject">Subject <span class="asterisk">*</span></label>
-                    <input class="form-control" type="text" name="contactSubject" id="contactSubject">
+                    <input class="form-control" type="text" name="subject" id="contactSubject">
                     <label for="contactMessage">Message <span class="asterisk">*</span></label>
-                    <input class="form-control" type="text" name="contactMessage" id="contactMessage">
+                    <input class="form-control" type="text" name="message" id="contactMessage">
                     <div class="form-check ms-2 mb-3">
-                                <input type="checkbox" class="form-check-input" value="" id="marketing">
-                                <label for="marketing" class="form-check-label">Please tick this box if you want to receive
-                                    marketing information from us. Please see our <a href="#">Privacy Policy</a> for more
-                                    information on how we use your data.</label>
-                            </div>
-                            <button type="submit" class="btn btn-design">Send Enquiry</button>
+                        <input type="checkbox" class="form-check-input" value="" id="marketing">
+                        <label for="marketing" class="form-check-label">Please tick this box if you want to receive
+                            marketing information from us. Please see our <a href="#">Privacy Policy</a> for more
+                            information on how we use your data.</label>
+                    </div>
+                    <button type="submit" class="btn btn-design">Send Enquiry</button>
                 </form>
                 </div>
             </section>
