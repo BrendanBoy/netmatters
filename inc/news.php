@@ -5,14 +5,15 @@ function get_articles() {
 
     try {
         $result = $db->query(
-            "SELECT category_name, service_name, image, title, body, author_image, author_name, date 
+            "SELECT Articles.id, category_name, service_name, image, title, body, author_image, author_name, date 
             FROM Articles
             JOIN Categories ON Articles.category_id = Categories.category_id
             JOIN Services ON Articles.service_id = Services.service_id
-            JOIN Authors ON Articles.author_id = Authors.author_id"
+            JOIN Authors ON Articles.author_id = Authors.author_id
+            ORDER BY Articles.id"
         );
     } catch (Exception $e) {
-        echo "Unable to retrive result";
+        echo "Unable to retrieve result";
         exit;
     }
 
