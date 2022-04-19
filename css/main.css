@@ -12040,9 +12040,10 @@ main a:hover {
   display: none;
   border-top: 1px solid #333645;
   font-size: 13px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   background-color: white;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
 }
 @media screen and (min-width: 768px) {
   #breadcrumb {
@@ -12059,6 +12060,13 @@ main a:hover {
 }
 #page-title h1, #page-title .h1 {
   margin: 0;
+}
+@media screen and (min-width: 992px) {
+  #page-title {
+    background-color: transparent;
+    color: #333645;
+    margin: 0;
+  }
 }
 
 .office-card {
@@ -12080,6 +12088,10 @@ main a:hover {
   color: #666;
 }
 
+.contact-area {
+  flex-direction: row-reverse;
+}
+
 #out-of-hours {
   display: none;
 }
@@ -12095,6 +12107,10 @@ main a:hover {
 }
 #contact-form a:hover {
   color: #121419;
+}
+
+textarea#contactMessage {
+  min-height: 100px;
 }
 
 .emphasis {
