@@ -15,15 +15,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     if (empty($telephone)) {
         $error_message[] = "The telephone field is required.";
+    } elseif (!preg_match("/^(?:0|\+?44)(?:\d\s?){9,10}$/", $telephone)) {
+        $error_message[] = "The telephone format is invalid.";
     }
     if (empty($email)) {
         $error_message[] = "The email field is required.";
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $error_message[] = "The email format is invalid.";
     }
     if (empty($subject)) {
         $error_message[] = "The subject field is required.";
     }
     if (empty($message)) {
         $error_message[] = "The message field is required.";
+    } elseif (strlen($message) < 6) {
+        $error_message[] = "The message must be at least 5 characters.";
+    }
+    if (empty($error_message)) {
+        if(add_contact($your_name, $company_name, $email, $telephone, $subject, $message)) {
+            $success_message = "Message delivered.";
+        } else {
+            $error_message[] = "Could not deliver message.";
+        }
     }
 }
 
@@ -150,15 +163,17 @@ include("inc/header.php");
             <section id="contact">
                 <div class="container">
                 <form id="contact-form" action="contact-us.php" method="post">
-                    <div class="error-messages">
+                    <div class="messages">
                         <?php
                         if (!empty($error_message)) {
-                            // var_dump($error_message);
                             echo "<ul>";
                             foreach ($error_message as $item){
                                 echo "<li>$item</li>";
                             }
                             echo "</ul>";
+                        }
+                        if (!empty($success_message)) {
+                            echo "<ul><li>$success_message</li></ul>";
                         }
                         ?>
                     </div>
@@ -181,7 +196,6 @@ include("inc/header.php");
                             information on how we use your data.</label>
                     </div>
                     <button type="submit" class="btn btn-design">Send Enquiry</button>
-                </form>
                 </div>
             </section>
 
