@@ -153,7 +153,12 @@ include("inc/header.php");
                     <div class="error-messages">
                         <?php
                         if (!empty($error_message)) {
-                            var_dump($error_message);
+                            // var_dump($error_message);
+                            echo "<ul>";
+                            foreach ($error_message as $item){
+                                echo "<li>$item</li>";
+                            }
+                            echo "</ul>";
                         }
                         ?>
                     </div>
