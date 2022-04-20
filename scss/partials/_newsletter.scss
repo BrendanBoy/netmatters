@@ -29,6 +29,7 @@ label {
     padding-left: 48px;
     &-label {
         line-height: 32px;
+        cursor: pointer;
     }
     &-input {
         &[type=checkbox] {

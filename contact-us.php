@@ -1,6 +1,8 @@
 <?php
 require("inc/functions.php");
 
+$your_name = $company_name = $email = $telephone = $subject = $message = "";
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $your_name = trim(filter_input(INPUT_POST, 'your_name', FILTER_SANITIZE_STRING));
     $company_name = trim(filter_input(INPUT_POST, 'company_name', FILTER_SANITIZE_STRING));
@@ -28,16 +30,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     if (empty($message)) {
         $error_message[] = "The message field is required.";
-    } elseif (strlen($message) < 6) {
+    } elseif (strlen($message) < 5) {
         $error_message[] = "The message must be at least 5 characters.";
     }
     if (empty($error_message)) {
         if(add_contact($your_name, $company_name, $email, $telephone, $subject, $message)) {
-            $success_message = "Your message has been sent.";
+            // $success_message = "Your message has been sent.";
+            header('location: contact-us.php?mail=1#contact-form');
         } else {
             $error_message[] = "Could not deliver your message.";
         }
     }
+}
+
+if (isset($_GET['mail'])) {
+    $success_message = "Your message has been sent.";
 }
 
 $pageTitle = "Contact Us | Netmatters";
@@ -80,7 +87,7 @@ include("inc/header.php");
                                         Cambridge,<br>
                                         CB4 0WS<br>
                                     </address>
-                                    <span class="tel emphasis"><a href="#">01223 37 57 72</a></span>
+                                    <span class="tel emphasis"><a href="tel:01223375772">01223 37 57 72</a></span>
                                     <span class="mt-auto">
                                         <a class="card-link btn btn-design" href="#">View More</a>
                                     </span>
@@ -105,7 +112,7 @@ include("inc/header.php");
                                         Wymondham, Norfolk,<br>
                                         NR18 0WZ<br>
                                     </address>
-                                    <span class="tel emphasis"><a href="#">01603 70 40 20</a></span>
+                                    <span class="tel emphasis"><a href="tel:01603704020">01603 70 40 20</a></span>
                                     <span class="mt-auto">
                                         <a class="card-link btn btn-design" href="#">View More</a>
                                     </span>
@@ -130,7 +137,7 @@ include("inc/header.php");
                                         Great Yarmouth,m Norfolk,<br>
                                         NR31 7RA<br>
                                     </address>
-                                    <span class="tel emphasis"><a href="#">01493 60 32 04</a></span>
+                                    <span class="tel emphasis"><a href="tel:01493603204">01493 60 32 04</a></span>
                                     <span class="mt-auto">
                                         <a class="card-link btn btn-design" href="#">View More</a>
                                     </span>
@@ -150,7 +157,7 @@ include("inc/header.php");
                         <div class="col-xl-4">
                             <div>
                                 <p><strong>Email us on:</strong></p>
-                                <p class="emphasis"><a href="#">sales@netmatters.com</a></p>
+                                <p class="emphasis"><a href="mailto:sales@netmatters.com">sales@netmatters.com</a></p>
                                 <p><strong>Business hours:</strong></p>
                                 <p><strong>Monday - Friday 07:00 - 18:00</strong></p>
                                 <a href="#contact-details" onclick="ooh()"><p><strong>Out of Hours IT Support <i class="fas fa-chevron-down"></strong></i></p></a>
@@ -169,42 +176,42 @@ include("inc/header.php");
                                 if (!empty($error_message)) {
                                     echo "<ul>";
                                     foreach ($error_message as $item){
-                                        echo "<li>$item</li>";
+                                        echo "<li class='error'>$item</li>";
                                     }
                                     echo "</ul>";
                                 }
                                 if (!empty($success_message)) {
-                                    echo "<ul><li>$success_message</li></ul>";
+                                    echo "<ul><li class='success'>$success_message</li></ul>";
                                 }
                                 ?>
                             </div>
                             <div class="row">
                                 <div class="form-group col-lg-6">
                                     <label for="contactName">Your Name <span class="asterisk">*</span></label>
-                                    <input class="form-control" type="text" name="your_name" id="contactName">
+                                    <input class="form-control" type="text" name="your_name" id="contactName" value="<?php echo $your_name ; ?>">
                                 </div>
                                 <div class="form-group col-lg-6">
                                     <label for="contactCompany">Company Name</label>
-                                    <input class="form-control" type="text" name="company_name" id="contactCompany">
+                                    <input class="form-control" type="text" name="company_name" id="contactCompany" value="<?php echo $company_name ; ?>">
                                 </div>
                                 <div class="form-group col-lg-6">
                                     <label for="contactEmail">Your Email <span class="asterisk">*</span></label>
-                                    <input class="form-control" type="email" name="email" id="contactEmail">
+                                    <input class="form-control" type="email" name="email" id="contactEmail" value="<?php echo $email ; ?>">
                                 </div>
                                 <div class="form-group col-lg-6">
                                     <label for="contactTelephone">Your Telephone Number <span class="asterisk">*</span></label>
-                                    <input class="form-control" type="tel" name="telephone" id="contactTelephone">
+                                    <input class="form-control" type="tel" name="telephone" id="contactTelephone" value="<?php echo $telephone ; ?>">
                                 </div>
                                 <div class="form-group">
                                     <label for="contactSubject">Subject <span class="asterisk">*</span></label>
-                                    <input class="form-control" type="text" name="subject" id="contactSubject">
+                                    <input class="form-control" type="text" name="subject" id="contactSubject" value="<?php echo $subject ; ?>">
                                 </div>
                             </div>
                             <label for="contactMessage">Message <span class="asterisk">*</span></label>
-                            <textarea class="form-control" name="message" id="contactMessage" cols="50" rows="10"></textarea>
+                            <textarea class="form-control" name="message" id="contactMessage" cols="50" rows="10"><?php echo $message ; ?></textarea>
                             <div class="form-check ms-2 mb-3">
-                                <input type="checkbox" class="form-check-input" value="" id="marketing">
-                                <label for="marketing" class="form-check-label">Please tick this box if you want to receive
+                                <input type="checkbox" class="form-check-input" value="" id="contactMarketing">
+                                <label for="contactMarketing" class="form-check-label">Please tick this box if you want to receive
                                     marketing information from us. Please see our <a href="#">Privacy Policy</a> for more
                                     information on how we use your data.</label>
                             </div>
