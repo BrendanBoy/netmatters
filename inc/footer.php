@@ -3,7 +3,7 @@
             <section id="newsletter">
                 <h2 class="sr-only">Newsletter</h2>
                 <div class="container">
-                    <fieldset class="p-5">
+                    <fieldset class="py-5">
                         <legend>Email Newsletter Sign-Up</legend>
                         <form>
                             <div class="row mb-3">
