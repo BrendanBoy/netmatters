@@ -12096,7 +12096,13 @@ main a:hover {
 }
 
 #out-of-hours {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+#out-of-hours.is-visible {
+  max-height: 440px;
 }
 
 #contact-form {
