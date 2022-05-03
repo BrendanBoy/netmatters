@@ -10,7 +10,8 @@ function get_articles() {
             JOIN Categories ON Articles.category_id = Categories.category_id
             JOIN Services ON Articles.service_id = Services.service_id
             JOIN Authors ON Articles.author_id = Authors.author_id
-            ORDER BY Articles.id"
+            ORDER BY Articles.id
+            LIMIT 3"
         );
     } catch (Exception $e) {
         echo "Unable to retrieve result";
