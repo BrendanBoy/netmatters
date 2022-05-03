@@ -12085,12 +12085,14 @@ main a:hover {
   padding: 5px 30px;
 }
 
-#contact-details {
+.lighter-text {
   color: #666;
+  font-weight: 500;
 }
 
 .contact-area {
   flex-direction: row-reverse;
+  font-weight: 600;
 }
 
 #out-of-hours {

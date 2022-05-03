@@ -46,12 +46,14 @@ main a:hover {
     }
 }
 
-#contact-details {
+.lighter-text {
     color: $addr;
+    font-weight: 500;
 }
 
 .contact-area {
     flex-direction: row-reverse;
+    font-weight: 600;
 }
 
 #out-of-hours {
