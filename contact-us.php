@@ -160,7 +160,7 @@ include("inc/header.php");
                                 <p class="emphasis"><a href="mailto:sales@netmatters.com">sales@netmatters.com</a></p>
                                 <p>Business hours:</p>
                                 <p>Monday - Friday 07:00 - 18:00</p>
-                                <a href="#contact-details" onclick="ooh()"><p>Out of Hours IT Support <i class="fas fa-chevron-down"></i></p></a>
+                                <a href="javascript:;" onclick="ooh()"><p>Out of Hours IT Support <i class="fas fa-chevron-down"></i></p></a>
                             </div>
                             <div id="out-of-hours">
                                 <p class="lighter-text">Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks</p>
