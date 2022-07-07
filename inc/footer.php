@@ -176,21 +176,6 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous">
-    </script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/banner-slider.js"></script>
-    <script src="js/mobile-menu.js"></script>
-    <script src="js/sticky-header.js"></script>
-    <script src="js/pop-up.js"></script>
-    <script src="js/out-of-hours.js"></script>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-   crossorigin=""></script>
-   <script src="js/maps.js"></script>
 </body>
 </html>
 <!-- end of footer -->
